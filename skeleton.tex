@@ -84,64 +84,50 @@ Any acknowledgements go here.
 
 \chapter{Introduction}
 
-The preliminary material of your report should contain:
-\begin{itemize}
-\item
-The title page.
-\item
-An abstract page.
-\item
-Declaration of ethics and own work.
-\item
-Optionally an acknowledgements page.
-\item
-The table of contents.
-\end{itemize}
+\section{Motivation}
 
-As in this example \texttt{skeleton.tex}, the above material should be
-included between:
-\begin{verbatim}
-\begin{preliminary}
-    ...
-\end{preliminary}
-\end{verbatim}
-This style file uses roman numeral page numbers for the preliminary material.
+\section{Problem Statement}
 
-The main content of the dissertation, starting with the first chapter,
-starts with page~1. \emph{\textbf{The main content must not go beyond page~40.}}
+\section{Objectives}
 
-The report then contains a bibliography and any appendices, which may go beyond
-page~40. The appendices are only for any supporting material that's important to
-go on record. However, you cannot assume markers of dissertations will read them.
+\section{Document Structure}
 
-You may not change the dissertation format (e.g., reduce the font size, change
-the margins, or reduce the line spacing from the default 1.5 spacing). Be
-careful if you copy-paste packages into your document preamble from elsewhere.
-Some \LaTeX{} packages, such as \texttt{fullpage} or \texttt{savetrees}, change
-the margins of your document. Do not include them!
+Piotrowska's work[] focuses on creating a simulator for evaluating the
+anonymity, latency, bandwidth overhead and scalability of Mix Networks over
+different design configurations. Her study mainly used the Simulator to compare
+existing projects - Elixxir, HOPR and Nym - deployed on Mix Network
+infrastructure with various configurations. The developed software realises many
+features that capture real-world use cases of Mix Networks but is not limited to
+it. The simulator can handle peer-to-peer network simulations as well, but we
+are not interested in such network formations within the context of this
+project. Next, we will take a deeper look into the Simulator's intrinsic,
+reporting on its core functionality, available features and input parameters.
+Additionally, we will run the simulator against a baseline configuration file
+using profiling[] and capture useful information about a simulation execution.
+This type of information will subsequently help us comment on simulation
+bottlenecks.
 
-Over-length or incorrectly-formatted dissertations will not be accepted and you
-would have to modify your dissertation and resubmit. You cannot assume we will
-check your submission before the final deadline and if it requires resubmission
-after the deadline to conform to the page and style requirements you will be
-subject to the usual late penalties based on your final submission time.
+\chapter{Background}
 
-\section{Using Sections}
+\section{Mix Networks Fundamentals} 
 
-Divide your chapters into sub-parts as appropriate.
+\section{Measuring Anonymity}
 
-\section{Citations}
+\section{Related Work}
 
-Citations (such as \cite{P1} or \cite{P2}) can be generated using
-\texttt{BibTeX}. For more advanced usage, we recommend using the \texttt{natbib}
-package or the newer \texttt{biblatex} system.
+\chapter{A Deep Dive Into The Simulators}
 
-These examples use a numerical citation style. You may use any consistent
-reference style that you prefer, including ``(Author, Year)'' citations.
+\section{Simulator}
 
-\chapter{Your next chapter}
+\section{MiXiM}
 
-A dissertation usually contains several chapters.
+\section{Features Competitive Grid}
+
+\section{The Baseline Simulation}
+
+\chapter{Implementation}
+
+\chapter{Experiments and Results}
 
 \chapter{Conclusions}
 
