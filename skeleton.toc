@@ -1,0 +1,29 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}%
+\contentsline {chapter}{\numberline {2}Background}{4}%
+\contentsline {section}{\numberline {2.1}Mix Networks Fundamentals}{4}%
+\contentsline {section}{\numberline {2.2}Mix Network Topologies}{5}%
+\contentsline {section}{\numberline {2.3}Mixing Techniques}{6}%
+\contentsline {section}{\numberline {2.4}Measuring Anonymity}{7}%
+\contentsline {chapter}{\numberline {3}A Deep Dive Into The Simulators}{9}%
+\contentsline {section}{\numberline {3.1}Simulator}{9}%
+\contentsline {subsection}{\numberline {3.1.1}Execution Workflow}{10}%
+\contentsline {subsection}{\numberline {3.1.2}Input Parameters and Configuration File}{11}%
+\contentsline {subsection}{\numberline {3.1.3}Baseline Simulation and Profiling Measurements}{12}%
+\contentsline {section}{\numberline {3.2}MiXiM}{13}%
+\contentsline {subsection}{\numberline {3.2.1}Execution Workflow}{15}%
+\contentsline {subsection}{\numberline {3.2.2}Input Parameters and Configuration File}{15}%
+\contentsline {subsection}{\numberline {3.2.3}Baseline Simulation and Profiling Measurements}{16}%
+\contentsline {section}{\numberline {3.3}Compasisson Framework}{17}%
+\contentsline {chapter}{\numberline {4}Replication Study}{20}%
+\contentsline {section}{\numberline {4.1}Studying the Anonymity Trilemma with Discrete-event Mix Network Simulator}{20}%
+\contentsline {section}{\numberline {4.2}MiXiM: Design Decisions and Empirical Evaluation}{20}%
+\contentsline {chapter}{\numberline {5}Imbalanced Stratified Mix Networks Study}{21}%
+\contentsline {section}{\numberline {5.1}Dynamically Imbalanced Stratified Network}{21}%
+\contentsline {section}{\numberline {5.2}Statically Imbalanced Stratified Network}{21}%
+\contentsline {chapter}{\numberline {6}Conclusion}{22}%
+\contentsline {section}{\numberline {6.1}Final Reminder}{22}%
+\contentsline {chapter}{Bibliography}{23}%
+\contentsline {chapter}{\numberline {A}First appendix}{24}%
+\contentsline {section}{\numberline {A.1}First section}{24}%
+\contentsline {chapter}{\numberline {B}Participants' information sheet}{25}%
+\contentsline {chapter}{\numberline {C}Participants' consent form}{26}%

@@ -1,0 +1,599 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  29 JUL 2022 16:42
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/erodotos/Desktop/msc-dissertation/skeleton.tex
+(/Users/erodotos/Desktop/msc-dissertation/skeleton.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06> (/Users/erodotos/Desktop/msc-dissertation/infthesis.cls
+Document Class: infthesis 2013/02/07 v3.7 School of Informatics Thesis Class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count167
+\Gm@cntv=\count168
+\c@Gm@tempcnt=\count169
+\Gm@bindingoffset=\dimen134
+\Gm@wd@mp=\dimen135
+\Gm@odd@mp=\dimen136
+\Gm@even@mp=\dimen137
+\Gm@layoutwidth=\dimen138
+\Gm@layoutheight=\dimen139
+\Gm@layouthoffset=\dimen140
+\Gm@layoutvoffset=\dimen141
+\Gm@dimlist=\toks16
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (/Users/erodotos/Desktop/msc-dissertation/eushield.sty
+Package: eushield 2006/08/28\ v1.1\ Commands for including the EU shield graphic
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count170
+\c@chapter=\count171
+\c@section=\count172
+\c@subsection=\count173
+\c@subsubsection=\count174
+\c@paragraph=\count175
+\c@subparagraph=\count176
+\c@figure=\count177
+\c@table=\count178
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen142
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/pslatex/pslatex.sty
+Package: pslatex 1996/07/24 v1.2 pslatex emulation (DPC)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 75.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 226.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 230.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 234.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 243.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 384.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 388.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 392.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 401.
+
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen143
+\captionmargin@=\dimen144
+\captionwidth=\dimen145
+\caption@tempdima=\dimen146
+\caption@indent=\dimen147
+\caption@parindent=\dimen148
+\caption@hangindent=\dimen149
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count179
+\c@continuedfloat=\count180
+)) (/Users/erodotos/Desktop/msc-dissertation/msccheck.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/printlen/printlen.sty
+Package: printlen 2009/09/03 v1.1a print lengths with units
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+\MT@toks=\toks17
+\MT@count=\count181
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen150
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
+\MT@listname@count=\count182
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 914.
+LaTeX Info: Redefining \lslig on input line 914.
+\MT@outer@space=\skip49
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count183
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks18
+\XKV@tempa@toks=\toks19
+)
+\XKV@depth=\count184
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count185
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen153
+)
+\c@padzeroesN=\count186
+\fc@tmpcatcode=\count187
+\@DT@modctr=\count188
+\@ordinalctr=\count189
+\@orgargctr=\count190
+\@strctr=\count191
+\@tmpstrctr=\count192
+\@DT@loopN=\count193
+\@DT@X=\count194
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count195
+\@month=\count196
+\@year=\count197
+\c@HOUR=\count198
+\c@HOURXII=\count199
+\c@MINUTE=\count266
+\c@TOHOUR=\count267
+\c@TOMINUTE=\count268
+\c@SECOND=\count269
+\currenthour=\count270
+\currentminute=\count271
+\currentsecond=\count272
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count273
+\dayofyear=\count274
+\dayofweek=\count275
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks21
+\dt@b=\toks22
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count276
+\c@subtable=\count277
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip50
+\multirow@cntb=\count278
+\multirow@dima=\skip51
+\bigstrutjot=\dimen154
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count279
+\l__pdf_internal_box=\box45
+) (/Users/erodotos/Desktop/msc-dissertation/skeleton.aux)
+\openout1 = `skeleton.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 41.
+LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line 41.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omspzccm.fd
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(113.81102pt, 412.56497pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 674.33032pt, 113.81102pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=412.56497pt
+* \textheight=674.33032pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=41.54103pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count280
+\scratchdimen=\dimen155
+\scratchbox=\box46
+\nofMPsegments=\count281
+\nofMParguments=\count282
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count283
+\MPscratchDim=\dimen156
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
+\everyMPtoPDFconversion=\toks24
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 41.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+LaTeX Info: Redefining \showhyphens on input line 41.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2016/01/12
+)
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 61.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<eushield-normal.pdf, id=1, 369.38pt x 373.395pt>
+File: eushield-normal.pdf Graphic file (type pdf)
+<use eushield-normal.pdf>
+Package pdftex.def Info: eushield-normal.pdf  used on input line 61.
+(pdftex.def)             Requested size: 369.37909pt x 373.39409pt.
+ [1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/erodotos/Desktop/msc-dissertation/eushield-normal.pdf>]
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 61.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 61.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [1
+
+] [2] [3]
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 96.
+ (/Users/erodotos/Desktop/msc-dissertation/skeleton.toc
+LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line 3.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ptmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line 3.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omlptmcm.fd
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+psycm on input line 3.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omxpsycm.fd
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+ [4
+
+])
+\tf@toc=\write3
+\openout3 = `skeleton.toc'.
+
+ [5]
+Chapter 1.
+[1
+
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 176.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 10.79993pt on input line 176.
+ [2] [3]
+Chapter 2.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 15.55188pt on input line 222.
+[4
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 248.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [5]
+<figures/topologies/cascade.png, id=50, 432.61626pt x 141.52875pt>
+File: figures/topologies/cascade.png Graphic file (type png)
+<use figures/topologies/cascade.png>
+Package pdftex.def Info: figures/topologies/cascade.png  used on input line 292.
+(pdftex.def)             Requested size: 185.65297pt x 60.73523pt.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 293.
+<figures/topologies/multi-cascade.png, id=52, 432.61626pt x 141.52875pt>
+File: figures/topologies/multi-cascade.png Graphic file (type png)
+<use figures/topologies/multi-cascade.png>
+Package pdftex.def Info: figures/topologies/multi-cascade.png  used on input line 299.
+(pdftex.def)             Requested size: 185.65297pt x 60.73523pt.
+<figures/topologies/stratified.png, id=53, 432.61626pt x 194.7275pt>
+File: figures/topologies/stratified.png Graphic file (type png)
+<use figures/topologies/stratified.png>
+Package pdftex.def Info: figures/topologies/stratified.png  used on input line 306.
+(pdftex.def)             Requested size: 185.65297pt x 83.56479pt.
+<figures/topologies/mesh.png, id=54, 422.57875pt x 151.56625pt>
+File: figures/topologies/mesh.png Graphic file (type png)
+<use figures/topologies/mesh.png>
+Package pdftex.def Info: figures/topologies/mesh.png  used on input line 313.
+(pdftex.def)             Requested size: 185.65297pt x 66.5899pt.
+ [6 </Users/erodotos/Desktop/msc-dissertation/figures/topologies/cascade.png> </Users/erodotos/Desktop/msc-dissertation/figures/topologies/multi-cascade.png> </Users/erodotos/Desktop/msc-dissertation/figures/topologies/stratified.png> </Users/erodotos/Desktop/msc-dissertation/figures/topologies/mesh.png>] [7]
+<figures/mixing_techniques/timed.png, id=66, 244.9953pt x 203.0787pt>
+File: figures/mixing_techniques/timed.png Graphic file (type png)
+<use figures/mixing_techniques/timed.png>
+Package pdftex.def Info: figures/mixing_techniques/timed.png  used on input line 388.
+(pdftex.def)             Requested size: 185.65297pt x 153.89519pt.
+<figures/mixing_techniques/threshold.png, id=67, 244.9953pt x 207.4149pt>
+File: figures/mixing_techniques/threshold.png Graphic file (type png)
+<use figures/mixing_techniques/threshold.png>
+Package pdftex.def Info: figures/mixing_techniques/threshold.png  used on input line 395.
+(pdftex.def)             Requested size: 185.65297pt x 157.1812pt.
+<figures/mixing_techniques/pool.png, id=68, 244.9953pt x 207.4149pt>
+File: figures/mixing_techniques/pool.png Graphic file (type png)
+<use figures/mixing_techniques/pool.png>
+Package pdftex.def Info: figures/mixing_techniques/pool.png  used on input line 402.
+(pdftex.def)             Requested size: 185.65297pt x 157.1812pt.
+<figures/mixing_techniques/continues.png, id=69, 268.1217pt x 203.0787pt>
+File: figures/mixing_techniques/continues.png Graphic file (type png)
+<use figures/mixing_techniques/continues.png>
+Package pdftex.def Info: figures/mixing_techniques/continues.png  used on input line 409.
+(pdftex.def)             Requested size: 185.65297pt x 140.62024pt.
+ [8 </Users/erodotos/Desktop/msc-dissertation/figures/mixing_techniques/timed.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixing_techniques/threshold.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixing_techniques/pool.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixing_techniques/continues.png>]
+Chapter 3.
+[9
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 460.
+ [10] [11] [12]
+<figures/baseline_simulation/simulator/baseline_simulator_entropy.png, id=91, 481.8pt x 361.35pt>
+File: figures/baseline_simulation/simulator/baseline_simulator_entropy.png Graphic file (type png)
+<use figures/baseline_simulation/simulator/baseline_simulator_entropy.png>
+Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_entropy.png  used on input line 595.
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+<figures/baseline_simulation/simulator/baseline_simulator_space.png, id=92, 481.8pt x 361.35pt>
+File: figures/baseline_simulation/simulator/baseline_simulator_space.png Graphic file (type png)
+<use figures/baseline_simulation/simulator/baseline_simulator_space.png>
+Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_space.png  used on input line 602.
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+<figures/baseline_simulation/simulator/baseline_simulator_time.png, id=93, 481.8pt x 361.35pt>
+File: figures/baseline_simulation/simulator/baseline_simulator_time.png Graphic file (type png)
+<use figures/baseline_simulation/simulator/baseline_simulator_time.png>
+Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_time.png  used on input line 609.
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+<figures/baseline_simulation/simulator/baseline_simulator_mem.png, id=94, 481.8pt x 361.35pt>
+File: figures/baseline_simulation/simulator/baseline_simulator_mem.png Graphic file (type png)
+<use figures/baseline_simulation/simulator/baseline_simulator_mem.png>
+Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_mem.png  used on input line 616.
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13] [14 </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/simulator/baseline_simulator_entropy.png> </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/simulator/baseline_simulator_space.png> </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/simulator/baseline_simulator_time.png> </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/simulator/baseline_simulator_mem.png>] [15] [16]
+<figures/baseline_simulation/mixim/baseline_mixim_entropy.png, id=112, 481.8pt x 361.35pt>
+File: figures/baseline_simulation/mixim/baseline_mixim_entropy.png Graphic file (type png)
+<use figures/baseline_simulation/mixim/baseline_mixim_entropy.png>
+Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_entropy.png  used on input line 769.
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+<figures/baseline_simulation/mixim/baseline_mixim_space.png, id=113, 481.8pt x 361.35pt>
+File: figures/baseline_simulation/mixim/baseline_mixim_space.png Graphic file (type png)
+<use figures/baseline_simulation/mixim/baseline_mixim_space.png>
+Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_space.png  used on input line 776.
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+<figures/baseline_simulation/mixim/baseline_mixim_time.png, id=114, 481.8pt x 361.35pt>
+File: figures/baseline_simulation/mixim/baseline_mixim_time.png Graphic file (type png)
+<use figures/baseline_simulation/mixim/baseline_mixim_time.png>
+Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_time.png  used on input line 783.
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+<figures/baseline_simulation/mixim/baseline_mixim_mem.png, id=115, 481.8pt x 361.35pt>
+File: figures/baseline_simulation/mixim/baseline_mixim_mem.png Graphic file (type png)
+<use figures/baseline_simulation/mixim/baseline_mixim_mem.png>
+Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_mem.png  used on input line 790.
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17] [18 </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/mixim/baseline_mixim_entropy.png> </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/mixim/baseline_mixim_space.png> </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/mixim/baseline_mixim_time.png> </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/mixim/baseline_mixim_mem.png>] [19]
+Chapter 4.
+
+Overfull \hbox (16.69395pt too wide) in paragraph at lines 860--860
+[]\OT1/phv/b/n/17.28 Studying the Anonymity Trilemma with Discrete-event
+ []
+
+[20
+
+]
+Chapter 5.
+[21
+
+]
+Chapter 6.
+(/Users/erodotos/Desktop/msc-dissertation/skeleton.bbl [22
+
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [23
+
+]
+Appendix A.
+[24
+
+]
+Appendix B.
+[25
+
+]
+Appendix C.
+[26
+
+] (/Users/erodotos/Desktop/msc-dissertation/skeleton.aux) ) 
+Here is how much of TeX's memory you used:
+ 6820 strings out of 480608
+ 110488 string characters out of 5903629
+ 401953 words of memory out of 5000000
+ 22370 multiletter control sequences out of 15000+600000
+ 582055 words of font info for 209 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 49i,9n,77p,1031b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (32 pages, 372628 bytes).
+PDF statistics:
+ 197 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 37462 words of extra memory for PDF output out of 42996 (max. 10000000)
+
