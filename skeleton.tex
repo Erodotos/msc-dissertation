@@ -433,9 +433,9 @@ infrastructure with different layouts.
 
 The developed software realises many features that capture real-world use cases
 of Mix Networks, but it is not limited to it. Even though the simulator can
-handle peer-to-peer network simulations, we are not interested in such network
-formations within the context of this project. Next, we will look deeper into
-the Simulator's intrinsic, reporting on its core functionality, available
+handle peer-to-peer (p2p) network simulations, we are not interested in such
+network formations within the context of this project. Next, we will look deeper
+into the Simulator's intrinsics, reporting on its core functionality, available
 features and input parameters. Additionally, we will run the simulator against a
 baseline configuration file using profiling tools[] and capture useful
 information about the simulation execution. This type of information will
@@ -450,10 +450,10 @@ splitting messages into packages, it seems that this part of the code is
 incomplete, and consequently, all messages are of one packet size.
 
 Furthermore, this simulator allows users to run experiments given many options.
-In more detail, there is support for many topologies, such as (a) cascade, (b)
-multi-cascade, (c) stratified and (d) peer-to-peer. Besides, there is an option
-for two mixing techniques (a) batch and reorder (threshold) and (b) Poisson
-mixing (continues). The current implementation has default-enabled cover traffic
+In more detail, there is support for many topologies, such as (a) Cascade, (b)
+Multi-Cascade, (c) Stratified and (d) P2P. Besides, there is an option for two
+mixing techniques (a) batch and reorder - threshold - and (b) poisson mixing
+-continues. The current implementation has default-enabled cover traffic
 generation for both clients and Mixes. Finally, the Simulator outputs the
 anonymity metrics of (a) entropy and (b) unlinkability.
 
@@ -490,11 +490,11 @@ There follows a list of the accepted command-line arguments and their
 description:
 
 \begin{itemize}
-    \item[] \texttt{-mode} \textbf{(required)} \textit{(string)}: This describes the
-    mode in which we run the simulator. The accepted modes are "test",
-    "test\_diff", "transcript", "synthetic traces", and "anon"; however, only the
-    "test" mode is entirely realised. We have no clue about the functionality or
-    purpose of the other modes.
+    \item[] \texttt{-mode} \textbf{(required)} \textit{(string)}: This describes
+    the mode in which we run the simulator. The accepted modes are \emph{test},
+    \emph{test\_diff}, \emph{transcript}, \emph{synthetic traces}, and
+    \emph{anon}; however, only the \emph{test} mode is entirely realised. We have no
+    clue about the functionality or purpose of the other modes.
     \item[] \texttt{-exp\_dir} \textbf{(required)} \textit{(string)}: This argument
     declares the directory's path, where the Simulator will dump any experiment
     logging files.
