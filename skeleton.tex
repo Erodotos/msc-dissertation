@@ -639,18 +639,19 @@ and 5 \emph{security issues} of no great importance.
 Guirat et al. carried out a similar attempt to develop an event-driven Mix
 Network simulator. In particular, Guirat et al., in their study[], present
 MiXiM, a simulation framework that helps academics and industry professionals
-assess design options and tradeoffs among different Mix Networks. Next, we will
-delve into the simulator implementation, reporting on its functionality,
-available features and input parameters. Besides that, we aim to run the
-simulator against a baseline scenario, reporting on its outputs and execution
-statistics. This information will help us decide if MiXiM is a well-built and
-feature-proof tool that brings out the most.
+assess various Mix Networks design options. Next, we will delve into the
+simulator implementation, reporting on its functionality, available features and
+input parameters. Besides that, we aim to run the simulator against a baseline
+scenario, reporting on its outputs and execution statistics. This information
+will help us decide if MiXiM is a well-built and feature-proof tool that brings
+out the most.
 
 After analyzing MiXiM, we understood the code intrinsics and captured its
 approach when simulating a network. Likewise, Piotrowska's work is well-designed
-and abstracted into similar entities: a)Simulation, b) Network, c) Mix
-Node(Poisson Mix, Pool, Timed Mix), d) Client, e) Relay(abstraction of an
-attacker) and f) Message.
+and abstracted into similar entities: (a)Simulation, (b) Network, (c) Mix Node -
+Poisson Mix, Pool, Timed Mix, Threshold Mix - (d) Client, (e) Relay -
+abstraction of an attacker - and (f) Message.
+
 
 Furthermore, the simulator allows users to run experiments given various
 configurations. In more detail, there is support for many topologies, such as
@@ -678,41 +679,49 @@ The workflow of executing a standard simulation scenario is as follows:
     \item The simulation is executed in a single phase lasting for several time
     ticks declared in the configuration file. During each message transmission
     from one node to another, entropy is updated.
-    \item Ultimately, MiXiM presents the average results to the user after
-    inspecting the execution logs.
+    \item After inspecting the execution logs, MiXiM presents the entropy to the user.
 \end{enumerate}
 
 \subsection{Input Parameters and Configuration File}
 
 MiXiM, compared to Simulator, does not take any command-line arguments. We only
 observe a single configuration file with six different sections. We present a
-sample configuration file in Figure 2. Following, we provide a thorough
+sample configuration file in Appendix .... Following, we provide a thorough
 description of the aforementioned file.
 
-In the first place, we can see under the DEFAULT section the number of clients
-sending and receiving messages in a network and a parameter called lambda\_c
-representing the rate of generating messages per time tick. Next, under the
-TOPOLOGY section, we can see different settings for all three supported
-topologies - Stratified, Cascade and Free Route. We can use the parameter
-fully\_connected to decide if we want to have mixes fully connected. The user can
-also define the routing strategy by choosing between the source or hop by hop.
-Other parameters in this section include E2E, the minimum end-to-end
-transmission delay, and n\_layers, l\_mixes\_per\_layer and n\_cascades, which
-describe the Cascade or stratified topology number of layers and the
-corresponding number of mixes that each layer hosts. Subsequently, we observe a
-section explaining the available mixing techniques. We have the mix\_type, which
-can be Poisson, Time, or Pool and mu, which is the delay on each mix node. For
-each of the aforementioned mixing techniques, the variables timeout, threshold,
-and flush\_percent, match each case accordingly. The following section refers to
-dummy data generation. The user can set the variables client\_dummies to enable
-or disable dummy, rate\_client\_dummies to control the dummy data generation,
-link\_based\_dummies to send dummies dropped on the next hop, multiple\_hop\_dummies
-to send dummies that last for many hops, and rate\_mix\_dummies to generate dummy
-messages on the Mix. The subsequent section, NODE\_SELECTION, is not required
-during the simulation and might have been left there from older software
-versions. Finally, we got the THREAT\_MODEL section, where we define the number
-of corrupted nodes and if we can uniformly distribute them across the network
-layers.
+\begin{itemize}
+    \item \textbf{Section 1} - \emph{DEFAULT}: Under the DEFAULT section, we can
+    see the number of clients sending and receiving messages in a network and a
+    parameter called lambda\_c representing the rate of generating messages per
+    time tick. 
+    \item \textbf{Section 2} - \emph{TOPOLOGY}: In this section, we describe
+    settings for all three supported topologies - Stratified, Cascade and Free
+    Route. The parameter fully\_connected enables us to have a complete or a
+    semi-connected Stratified topology. Also, here we define the routing
+    strategy by choosing between the source - users choose the route - or
+    hop\_by\_hop - random selection. Other parameters in this section include E2E,
+    the minimum end-to-end transmission delay, and n\_layers, l\_mixes\_per\_layer
+    and n\_cascades, which describe the number of layers and the corresponding
+    number of mixes on each layer.
+    \item \textbf{Section 3} - \emph{MIXING}: This section is related to the
+    available mixing techniques. We have the mix\_type, which can be Poisson,
+    Time, or Pool and mu, which is the delay on each mix node. For each of the
+    aforementioned mixing techniques, the variables timeout, threshold, and
+    flush\_percent, match each case accordingly.
+    \item \textbf{Section 4} - \emph{DUMMIES}: This section regards dummy data
+    generation. The user can set the variables client\_dummies to enable or
+    disable dummy messages, rate\_client\_dummies to control the dummy data
+    generation, link\_based\_dummies to send dummies dropped on the next hop,
+    multiple\_hop\_dummies to send dummies that last for many hops, and
+    rate\_mix\_dummies to generate dummy messages on the Mix.  
+    \item \textbf{Section 5} - \emph{NODE\_SELECTION}: All attributes in this
+    section are not required during the simulation and might be the fragments of
+    older software versions. 
+    \item \textbf{Section 6} - \emph{THREAT\_MODEL}: Here, we define the number
+    of corrupted nodes and if we want them uniformly distributed across the
+    network layers.
+\end{itemize}
+
 
 \subsection{Baseline Simulation and Profiling Measurements}
 
@@ -734,7 +743,8 @@ Indeed, skimming the source code, we managed to spot four bugs we present in the
     \item The parsing section of the code accepts as valid topologies "cascade",
     "multi-cascade", and "stratified". Nevertheless, this is not the case for
     some files - Network.py, Simulation.py and Client.py - where the code
-    expects a topology called "XDR".
+    expects a topology called "XDR". This contradiction causes MiXiM to crash,
+    given the topologies "cascade" and "multi-cascade". 
     \item The variable n\_cascade, which describes the number of parallel
     Cascades in Network.py, is hard coded. Hence, the simulation is not assuming
     the user's configuration.
@@ -744,24 +754,26 @@ Indeed, skimming the source code, we managed to spot four bugs we present in the
     has no value.
     \item The initial parsing of boolean parameters from the configuration file
     is incorrect since the code used is a Python2 command which, when using
-    Python3, always returns True. Therefore all boolean parameters in the
-    configuration file are True, no matter their actual value.
+    Python3 - which other project libraries require - always returns True.
+    Therefore, all boolean parameters in the configuration file are True, no
+    matter their actual value.
 \end{enumerate}
 
-The purpose of this project is not to fix someone else's work but asses it.
-Consequently, we did not proceed with further code reviews or repairs.
+Anyhow, the purpose of this project is not to fix someone else's work but asses
+it. Consequently, we did not proceed with further code reviews or repairs.
 
-In regards to the conducted experiments, we can observe the results in Figure.
-We cannot deduce valuable insights from these graphs since, as mentioned
-earlier, we failed to fulfil all of them. Surprisingly, the execution time and
-space used to dump log files increase linearly for different simulation
-time-frames. According to our previous code analysis, this is expected since
-clients in MiXiM generate messages based on the $\lambda$ rate. Therefore, the
-longer the simulation, the more messages are generated. Hence, more processing
-time and storage space are required. Instead, the Simulator simulates only the
-number of specified target messages regardless of the duration. Furthermore, it
-is notable that in terms of memory usage, MiXiM is sufficient, requiring only
-21.4 megabytes of RAM. 
+In regards to the successful experiments, we can observe the results in Figure.
+Surprisingly, the execution time and space used to dump log files increase
+linearly for different simulation time-frames. According to our previous code
+analysis, this is justifiable since clients in MiXiM generate messages based on
+the λ rate. The longer the simulation, the more messages are generated. Hence,
+more processing time and storage space are required. On the other hand,
+Simulator uses only the number of specified target messages regardless of the
+duration. Furthermore, it is notable that in terms of memory usage, MiXiM is
+sufficient, requiring only 21.4 megabytes of RAM for all our successful trials.
+Lastly, we cannot deduce further valuable insights from these graphs since, as
+mentioned earlier, we failed to perform all baseline experiments.
+
 
 \begin{figure}[h!]
     \centering
@@ -840,21 +852,23 @@ and (f) SonarQube Code analysis insights.
     \label{tab:comparisson-table}
     \end{table}
 
-Table ... illustrates how MiXiM and Simulator compare in each aspect. We notice
-that MiXiM realises 13 features, while Simulator has only 9. Nonetheless, it is
-essential to prompt that most of MiXiM's features are not working (look section
-...) and simulations crash on runtime. Also, both software achieves high scores
-in object abstraction, while code readability for MiXiM seems to be poor.
-Further, MiXiM has 81 code smells compared to Simulator, which has 57. Moreover,
-MiXiM has double the bugs and security issues compared to Simulator, which has 2
-and 5, respectively. Finally, both projects have negligible amounts of code
-duplication.
+Table ... illustrates how MiXiM and Simulator compare in each aspect. We
+notice that MiXiM realises 13 features, while Simulator has only 9.
+Nonetheless, it is essential to prompt that most of MiXiM's features are not
+working, crashing on runtime. Also, both software achieves high scores in
+object abstraction, while code readability for MiXiM seems to be poor.
+Further, MiXiM has 81 code smells compared to Simulator, which has 57.
+Moreover, MiXiM has double the bugs and security issues compared to
+Simulator, which has 2 and 5, respectively. Eventually, both projects have
+negligible amounts of code duplication.
 
-Eventually, we decided that the best simulator so far is Piotrawskas Simulator.
-We justify our decision mainly based on the usability aspect. Even though MiXiM
-advertises a large set of features, it fails to deliver a working code-base. We
-are confident that Simulator is a well-designed software and can be improved so
-in the future support more features. 
+Ultimately, we decided that the best simulator so far is Piotrawskas
+Simulator. We justify our decision mainly based on the usability aspect.
+Even though MiXiM advertises a large set of features, it fails to deliver a
+working code-base. We are confident that Simulator is a well-designed
+software and can be improved so in the future support more features.
+Besides, Simulator satisfied our reasoning for valid and quality entropy and
+network latency results. 
 
 \chapter{Replication Study}
 
