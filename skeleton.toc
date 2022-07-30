@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {3.1.2}Input Parameters and Configuration File}{11}%
 \contentsline {subsection}{\numberline {3.1.3}Baseline Simulation and Profiling Measurements}{12}%
 \contentsline {section}{\numberline {3.2}MiXiM}{13}%
-\contentsline {subsection}{\numberline {3.2.1}Execution Workflow}{15}%
+\contentsline {subsection}{\numberline {3.2.1}Execution Workflow}{14}%
 \contentsline {subsection}{\numberline {3.2.2}Input Parameters and Configuration File}{15}%
 \contentsline {subsection}{\numberline {3.2.3}Baseline Simulation and Profiling Measurements}{16}%
 \contentsline {section}{\numberline {3.3}Compasisson Framework}{17}%

@@ -121,10 +121,11 @@ concealment. Metadata such as the message size, the communication duration, the
 message origin and destination leak information about an online encrypted,
 "secure" communication. A global adversary passively eavesdropping on every
 network node can statistically observe a message's sender and receiver with a
-certain probability. Characteristically, the former NSA and CIA director General
-Michael Hayden said that "we kill people based on metadata". Hence, researchers
-have been steering toward new means of communication that respect users' privacy
-and improve anonymity.
+certain probability. Characteristically, the former National Security Agency
+(NSA) and Central Intelligence Agency (CIA) director General Michael Hayden said
+that "we kill people based on metadata". Hence, researchers have been steering
+toward new means of communication that respect users' privacy and improve
+anonymity.
 
 Mix Networks (Mixnets) provide a solution to the metadata anonymity issue by
 routing equal-sized messages through a chain of nodes (Mixes). Mixes shuffle
@@ -133,12 +134,12 @@ and the receiver.
 
 The Mixnets pioneer David Chaum proposed Cascade networks as a tool for a
 hard-to-trace electronic mail exchange system back in 1981. Nevertheless, his
-idea did not succeed due to a) the high computational requirements of such a
-system, b) the significant network latency and c) the lack of quality
-implementations[]. Soon, researchers realised the potential of Mixnets and
-their applications to many domains. Such applications include remailers[],
-instant messaging apps[], or, even more recently, blockchain transaction routing
-apps that provide anonymity[]. In addition, researchers have developed two
+idea did not succeed due to (a) the high computational requirements of such a
+system, (b) the significant network latency and (c) the lack of quality
+implementations[]. Soon, researchers realised the potential of Mixnets and their
+applications to many domains. Such applications include remailers[], instant
+messaging apps[], or even more recently, blockchain transaction routing apps
+that provide anonymity[]. In addition, researchers have developed two
 simulators[] to empirically evaluate Mix Networks' performance and anonymity.
 When designing a Mixnet, we can have several design configurations. With the
 term configurations, we refer to different mixing techniques and topologies,
@@ -182,7 +183,7 @@ The conducted analysis suggests that the MiXiM simulator offers a plethora of
 features; however, the code seems to be buggy and not entirely functional. On
 the other hand, Simulator[] (Ania's project has not an official name and is
 called "Simulator") has fewer features but works appropriately, has cleaner
-code, and therefore can be trusted for further development. Nevertheless, it is
+code, and therefore can be trusted for further development. Nonetheless, it is
 worth mentioning that Simulator is a high memory demand software. Remarkably,
 increasing the number of users in a simulation requires lots of memory, while
 the simulation runtime sharply increases.
@@ -191,16 +192,15 @@ In addition, we observe that a dynamically imbalanced Stratified Mixnet is not
 compromised in terms of anonymity since all mixes will receive the same amount
 of traffic in the long term. Nevertheless, there is a notable difference when
 the network is statically imbalanced. A Stratified Mixnet with a constantly
-different number of nodes on each layer achieves various levels of anonymity.
-Remarkably, the number of mixes in the middle layers is not significantly
-affecting anonymity, while the opposite is true for the first and last layers.
+different number of nodes on each layer achieves various levels of anonymity. As
+noticed, the number of mixes in the middle layers is not significantly affecting
+anonymity, while the opposite is true for the first and last layers.
 Furthermore, assuming the same traffic while increasing the number of mixes per
 layer indicates a decline in anonymity. Also, we find out that the number of
 users sending and receiving messages over the network significantly impacts
 anonymity. In other words, anonymity sharply increases when a network
-facilitates thousands of users. Finally, regarding latency, the current
-realisation of Stratified networks seems not to affect the average end-to-end
-transmission duration.
+facilitates thousands of users. Finally, the current realisation of Stratified
+networks seems not to affect the average end-to-end transmission latency.
 
 The following chapters are organised as follows. Chapter 2 briefly introduces
 background knowledge, including Mixnets fundamentals and the anonymity metric
@@ -515,7 +515,7 @@ different simulation aspects. We present a sample configuration file in Figure
     \item \textbf{Section 1} - \emph{Experiment Id}: In this section, we provide
     a simple label to help keep different simulations in order.
     \item \textbf{Section 2} - \emph{Logging}: This section allows us to enable
-    or disable logging. The attribute dir extends the logging directory path
+    or disable logging. The attribute \texttt{dir} extends the logging directory path
     specified in the command-line arguments. The attributes \texttt{client\_log}
     and \texttt{mix\_log} shown in the configurations sample are never used
     throughout the simulation.
@@ -563,7 +563,7 @@ same results for all topologies except Cascade. We establish our assumption on
 the fact that a single Cascade topology has fewer Mixes than the other
 topologies described earlier. However, according to Figure..., our hypothesis is
 false since the Simulator uses the same amount of memory - roughly 247 megabytes
-- in all experiments. In a later chapter of this work, we will see that
+- in all experiments. In a later chapter, we will see that
 memory usage solely depends on the number of users we are simulating.
 
 In regards to space complexity, we expect to have differences among topologies.
@@ -622,16 +622,17 @@ messages on each hop increases Mix's anonymity set, so entropy is higher.
  \end{figure}
  
 
-Finally, we run Piotrowska's project using a cProfiler[] to get visual
+Finally, we run Piotrowska's project using a \emph{cProfiler}[] to get visual
 information and statistics about its execution tree (sequence of functions
 called). We get a detailed representation of the execution tree in Figure. We
-also analyze the project using SonarQube to get information about the quality of
-the code. In the first place, cProfiler reveals that 59.75\% of the CPU usage was
-for processing packets, while the heaviest task running under the "packet
-processing" branch was "entropy update". Entropy update took 38.76\% of the total
-CPU usage, indicating a possible bottleneck to the whole execution. Regarding
-SonarQube results, we find out that 2.7\% of the code is duplicated, and there
-are 57 code smells, 2 bugs and 5 security issues of no great importance.
+also analyze the project using \emph{SonarQube} to get information about the
+quality of the code. In the first place, \emph{cProfiler} reveals that 59.75\%
+of the CPU usage was for processing packets, while the heaviest task running
+under the \emph{packet processing} branch was \emph{entropy update}. Entropy
+update took 38.76\% of the total CPU usage, indicating a possible bottleneck to
+the whole execution. Regarding \emph{SonarQube} results, we find out that 2.7\%
+of the code is duplicated, and there are 57 \emph{code smells}, 2 \emph{bugs}
+and 5 \emph{security issues} of no great importance.
 
 \section{MiXiM}
 
