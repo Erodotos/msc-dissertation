@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex skeleton"] 1659112204 "skeleton.aux" "skeleton.bbl" "skeleton" 1659185936
+["bibtex skeleton"] 1659189688 "skeleton.aux" "skeleton.bbl" "skeleton" 1659190120
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "mybibfile.bib" 1654241054 547 8c016d9a1a083bbaf3b3b797b9375452 ""
-  "skeleton.aux" 1659185936 6383 7c9789e4b3621abcae9ff91731492579 "pdflatex"
+  "skeleton.aux" 1659190119 6383 7c9789e4b3621abcae9ff91731492579 "pdflatex"
   (generated)
   "skeleton.bbl"
   "skeleton.blg"
-["pdflatex"] 1659185934 "/Users/erodotos/Desktop/msc-dissertation/skeleton.tex" "/Users/erodotos/Desktop/msc-dissertation/skeleton.pdf" "skeleton" 1659185936
-  "/Users/erodotos/Desktop/msc-dissertation/skeleton.aux" 1659185936 6383 7c9789e4b3621abcae9ff91731492579 ""
-  "/Users/erodotos/Desktop/msc-dissertation/skeleton.tex" 1659185933 49478 110996e7db71dfc4f00bdf6a4ed13b76 ""
+["pdflatex"] 1659190117 "/Users/erodotos/Desktop/msc-dissertation/skeleton.tex" "/Users/erodotos/Desktop/msc-dissertation/skeleton.pdf" "skeleton" 1659190120
+  "/Users/erodotos/Desktop/msc-dissertation/skeleton.aux" 1659190119 6383 7c9789e4b3621abcae9ff91731492579 ""
+  "/Users/erodotos/Desktop/msc-dissertation/skeleton.tex" 1659190117 49418 7226a4ac1dfea47108d6423f24387cf2 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm" 1136768653 2240 eb56c13537f4d8a0bd3fafc25572b1bd ""
@@ -140,14 +140,14 @@
   "figures/topologies/stratified.png" 1650873960 19880 f1b0c0170ea2b6db441ce331fd5ed471 ""
   "infthesis.cls" 1654241054 25061 2c6fef786f35a1561ca3de52804e6857 ""
   "msccheck.sty" 1654241054 3107 ec1dd0b0fcd47ace226226aaa0a45754 ""
-  "skeleton.aux" 1659185936 6383 7c9789e4b3621abcae9ff91731492579 "pdflatex"
-  "skeleton.bbl" 1659112204 49 0eba253fc001332e731e8aba3f23127b "bibtex skeleton"
-  "skeleton.tex" 1659185933 49478 110996e7db71dfc4f00bdf6a4ed13b76 ""
-  "skeleton.toc" 1659185936 2135 f74a18f403bb6a7f58b7bb5eb02b4a56 "pdflatex"
+  "skeleton.aux" 1659190119 6383 7c9789e4b3621abcae9ff91731492579 "pdflatex"
+  "skeleton.bbl" 1659189688 49 0eba253fc001332e731e8aba3f23127b "bibtex skeleton"
+  "skeleton.tex" 1659190117 49418 7226a4ac1dfea47108d6423f24387cf2 ""
+  "skeleton.toc" 1659190119 2135 f74a18f403bb6a7f58b7bb5eb02b4a56 "pdflatex"
   (generated)
+  "skeleton.log"
   "skeleton.aux"
   "/Users/erodotos/Desktop/msc-dissertation/skeleton.pdf"
-  "skeleton.toc"
-  "skeleton.log"
   "skeleton.pdf"
+  "skeleton.toc"
   "/Users/erodotos/Desktop/msc-dissertation/skeleton.log"

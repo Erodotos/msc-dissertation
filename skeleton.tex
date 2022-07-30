@@ -221,26 +221,25 @@ metric of entropy, which we will use to measure anonymity in subsequent chapters
 
 \section{Mix Networks Fundamentals} 
 
-Mix Network is a communication system that helps us exchange messages from one
-end to another, hiding metadata. In more detail, metadata includes but is not
-limited to geographical location, message sender and receiver, transmission time
-and frequency, size of the message and the message sequence. Mixnets remove time
-and sequence-related correlation factors between a message sender and receiver.
-They achieve that by routing same-size messages through a chain of nodes called
-Mixes. Mixes can be arranged into specific formations called topologies,
-defining how they are inter-connected. Each time a Mix receives a message m, it
-is permuted within a set of other messages M. The messages' permutation is
-called mixing and can be conducted using various techniques. The purpose of
-mixings is to make it hard for an adversary to link input and output messages of
-a Mix. Nevertheless, a global adversary can observe when a sender initiates a
-message transmission and when a receiver receives a message. For this reason,
-Mixnets use decoy/cover traffic to confuse an adversary, determining a real from
-a fake message. 
+Mix Network is a communication system which enables us to exchange messages from
+one end to another, hiding metadata. In more detail, metadata includes but is
+not limited to geographical location, message sender and receiver, transmission
+time and frequency, size of the message and the message sequence. Mixnets remove
+time and sequence-related correlation factors between a message sender and
+receiver as they route same-size messages through a chain of nodes called Mixes.
+Mixes can be arranged into specific formations called topologies, defining how
+they are interconnected. Whenever a Mix receives a message m, it is permuted
+within a set of other messages M. The messages' permutation is called mixing and
+can be conducted using various techniques. Mixing aims to hinder an adversary
+from linking input and output messages of a Mix. Still, a global adversary can
+observe a sender initiating a message transmission and a receiver acquiring a
+message. For this reason, Mixnets use decoy/cover traffic to confuse an
+adversary, determining a real from a fake message. 
 
 Furthermore, each topology and mixing technique has advantages and
 disadvantages, yielding scalability and performance versus anonymity tradeoffs.
 In the following sections (... ..), we thoroughly analyse available topologies
-and mixing techniques, explaining their tradeoffs.
+and mixing techniques, explaining their differences.
 
 \section{Mix Network Topologies}
 
@@ -259,29 +258,29 @@ and mixing techniques, explaining their tradeoffs.
    the main advantage of this formation is the greater availability and
    scalability. The user can select a different Cascade to transmit a message.
    Also, having multiple Cascades allows the network to process more messages
-   simultaneously. Nevertheless, if a Mix on a Cascade is malicious, we will get
+   simultaneously. However, if a Mix on a Cascade is malicious, we will get
    less anonymity since there is no way of routing traffic between the different
    Cascades.
-   \item \textbf{Stratified:} This topology comprises a set of layers. In each
-   layer, we can have a fixed number of mixes. Every mix that belongs to layer
-   $l$ is bonded to every node that belongs to layers $l-1$ and $l+1$ [8].
-   Variations of this topology are (i) fully connected nodes as described above
-   and (ii) semi-connected nodes where each node in layer l communicates with
-   only a set of nodes on layers $l-1$ and $l+1$ [7]. Stratified topology is
-   flexible regarding scalability and latency because we can handle more traffic
-   by adding more mixes in each layer. Also, having many mixes in each layer
-   makes the network crash and fault tolerant. Nevertheless, we must note that
-   if a stratified topology gets too large and the traffic for some reason is
-   reduced, anonymity also reduces. This happens because messages split to more
-   nodes, and therefore we have less mixing. We can overcome this issue by
-   generating decoy traffic, but we have to keep in mind that this comes with an
-   extra computational cost. Figure .... illustrates a fully connected
-   stratified topology.
+   \item \textbf{Stratified:} This topology comprises a set of layers. On each
+   layer, we can have a fixed number of mixes. Every Mix that belongs to layer $l$
+   is bonded to every node that belongs to layers $l-1$ and $l+1$[8]. Variations of
+   this topology are (a) fully connected nodes as described above and (b)
+   semi-connected nodes where each node in layer l communicates with only a set
+   of nodes on layers $l-1$ and $l+1$[7]. Stratified topology is flexible
+   regarding scalability and latency because we can handle more traffic by
+   adding more mixes in each layer. Also, having many mixes in each layer makes
+   the network crash and fault tolerant. Anyhow, we must note that if a
+   stratified topology gets too large and the traffic for some reason is
+   reduced, anonymity is also reduced. This happens because messages split to
+   more nodes, and therefore we have less mixing. We can overcome this issue by
+   generating decoy traffic, but we must recognise that an extra computational
+   cost accompanies this. Figure .... illustrates a fully connected stratified
+   topology.
    \item \textbf{Mesh:} In this topology, Mixes are loosely arranged.
    Specifically, there is a link between every Mix in the network. A mixing
-   route can start and finish at any node. Nevertheless, the muddled paths that
+   route can start and finish at any node. Nevertheless, the muddled paths
    a message can take on this topology make it hard for researchers to measure
-   anonymity. Hence it is not widely realised and used. Figure 1.d depicts a
+   anonymity. Hence, it is not widely realised and used. Figure 1.d depicts a
    mesh topology.
 \end{itemize}
 
@@ -325,38 +324,38 @@ and mixing techniques, explaining their tradeoffs.
    incoming messages and permute and forward them every t seconds, where t is a
    system-defined variable. Figure ... illustrates how time-based Mixes work.
    The advantage of this mixing technique is that we can control the message
-   transfer delay. Nevertheless, the downside is that we do not get to govern
-   how many messages we mix. This is because a different number of messages
-   might be received in separate rounds. As a result, the number of messages
-   shuffled each time is not the same; therefore, the anonymity set can
-   sometimes be large while sometimes smaller. A small set of messages infers
-   reduced anonymity. To keep anonymity above a baseline, we must incorporate
-   complementary cover traffic, which comes with an extra computational expense.
+   transfer delay. Nonetheless, on the downside, we do not know and govern how
+   many messages we mix. This is because a different number of messages may be
+   received in separate rounds. As a result, the number of messages shuffled
+   each time is not the same; therefore, the anonymity set can sometimes be
+   large while sometimes smaller. A small set of messages infers reduced
+   anonymity. To keep anonymity above a baseline, we must incorporate
+   complementary cover traffic, which comes with an extra computational expense. 
    \item \textbf{Threshold-Based:} Similar to time-based mixes, a threshold Mix buffers
-   messages into a queue until a predefined threshold is reached. Then we
+   messages into a queue until a predefined threshold is reached. Then, we
    shuffle and forward messages to the next hop[]. In contrast with timed Mixes,
    threshold Mixes allow us to control the anonymity set of messages being
    processed. Nonetheless, this technique has some disadvantages as well.
    Primarily, the problem arises when the network does not have much traffic and
    the receiving buffer does not reach its limit shortly. As a result, message
-   delivery will be delayed significantly, which is not ideal for the user
+   delivery will be delayed significantly, which is not ideal for the user's
    experience. The solution to this problem is to integrate cover traffic in
    order to fill a Mix with messages more frequently. As mentioned before, this
    comes with a computational overhead.
-   \item \textbf{Pool-Mix:} This hybrid mixing technique[25] derives features from timed,
-   and threshold mixing approaches. In more detail, If a threshold is reached,
-   we release a fraction of the messages every t seconds. The bright side of
-   this realisation is that a message leaving the Mix can be either a new
-   message which just entered the pool or an old one which was not picked during
-   the last emission. There is no way of knowing which one was picked. As a
-   result, anonymity is improved. At the same time, one could assume this
-   feature is a bug. In other words, a message can stack in the pool for quite
-   some time before arriving at its destination. We can observe that this yields
+   \item \textbf{Pool-Mix:} This hybrid mixing technique[25] derives features
+   from timed, and threshold mixing approaches. We release a fraction of the
+   messages every t seconds if a threshold is reached. The bright side of this
+   realisation is that a message leaving the Mix can be either a new message
+   which just entered the pool or an old one which was not picked during the
+   last emission. There is no way of knowing which one was picked. Consequently,
+   anonymity is improved. At the same time, one could assume this feature is a
+   bug. In other words, a message can stack in the pool for quite some time
+   before arriving at its destination. We can observe that this yields
    unexpected delays. Besides that, a pool Mix requires many messages to work
-   optimally. Therefore, as mentioned before, this solution might need to
+   optimally. Therefore, as mentioned earlier, this solution might need to
    include cover traffic to increase the network's capacity.
    \item \textbf{Continues:} This mixing technique depends on a delay given by the
-   message sender[26]. The advantage of this approach is that messages are not
+   message sender[26]. The main advantage of this approach is that messages are not
    shuffled together, and therefore, there is no statistical inference. Each
    message is treated individually, and the dispatch timestamp is not affected
    by the arrival of any other message.
@@ -367,14 +366,15 @@ and mixing techniques, explaining their tradeoffs.
 As many scientists stated in the past, "Entropy is the natural order of the
 universe", meaning natural chaos. One way to measure anonymity in Mixnets is
 entropy. In other words, we are trying to measure the chaos between message
-transmissions. To do so, we use the Shannon entropy formula (the result is in
-bits). Equation (2.1) describes that formula. High entropy values imply better
-anonymity than lower values. There is no way of identifying acceptable entropy
-levels since this depends on the network size and adversary capabilities. In the
-following formula, we denote as $p(x)$ the probability that an attacker can
-assign to a user being the message sender. For instance, if we have an anonymity
-set of 1000 indistinguishable messages within a Mix buffer, we have 9.96 bits of
-entropy ($Entropy = -\sum_{i = 1}^{1000}p(\frac{1}{1000}) \log_2p(\frac{1}{1000}) = 9.96 bits$). 
+transmissions. Hence, we use the Shannon entropy formula (the result is in bits)
+to achieve that. Equation (2.1) describes that formula. High entropy values
+imply better anonymity than lower values. There is no way of identifying
+acceptable entropy levels since this depends on the network size and adversary
+capabilities. In the following formula, we denote as $p(x)$ the probability that
+an attacker can assign to a user being the message sender. For instance, if we
+have an anonymity set of 1000 indistinguishable messages within a Mix buffer, we
+have 9.96 bits of entropy.  ($Entropy = -\sum_{i = 1}^{1000}p(\frac{1}{1000})
+\log_2p(\frac{1}{1000}) = 9.96 bits$). 
 
 \begin{equation}
     \label{eq:entropy}

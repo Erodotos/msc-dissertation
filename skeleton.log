@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  30 JUL 2022 13:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  30 JUL 2022 15:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -438,31 +438,31 @@ LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 [4
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 248.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 247.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [5]
 <figures/topologies/cascade.png, id=50, 432.61626pt x 141.52875pt>
 File: figures/topologies/cascade.png Graphic file (type png)
 <use figures/topologies/cascade.png>
-Package pdftex.def Info: figures/topologies/cascade.png  used on input line 292.
+Package pdftex.def Info: figures/topologies/cascade.png  used on input line 291.
 (pdftex.def)             Requested size: 185.65297pt x 60.73523pt.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 293.
+(Font)              scaled to size 9.85492pt on input line 292.
 <figures/topologies/multi-cascade.png, id=52, 432.61626pt x 141.52875pt>
 File: figures/topologies/multi-cascade.png Graphic file (type png)
 <use figures/topologies/multi-cascade.png>
-Package pdftex.def Info: figures/topologies/multi-cascade.png  used on input line 299.
+Package pdftex.def Info: figures/topologies/multi-cascade.png  used on input line 298.
 (pdftex.def)             Requested size: 185.65297pt x 60.73523pt.
 <figures/topologies/stratified.png, id=53, 432.61626pt x 194.7275pt>
 File: figures/topologies/stratified.png Graphic file (type png)
 <use figures/topologies/stratified.png>
-Package pdftex.def Info: figures/topologies/stratified.png  used on input line 306.
+Package pdftex.def Info: figures/topologies/stratified.png  used on input line 305.
 (pdftex.def)             Requested size: 185.65297pt x 83.56479pt.
 <figures/topologies/mesh.png, id=54, 422.57875pt x 151.56625pt>
 File: figures/topologies/mesh.png Graphic file (type png)
 <use figures/topologies/mesh.png>
-Package pdftex.def Info: figures/topologies/mesh.png  used on input line 313.
+Package pdftex.def Info: figures/topologies/mesh.png  used on input line 312.
 (pdftex.def)             Requested size: 185.65297pt x 66.5899pt.
  [6 </Users/erodotos/Desktop/msc-dissertation/figures/topologies/cascade.png> </Users/erodotos/Desktop/msc-dissertation/figures/topologies/multi-cascade.png> </Users/erodotos/Desktop/msc-dissertation/figures/topologies/stratified.png> </Users/erodotos/Desktop/msc-dissertation/figures/topologies/mesh.png>] [7]
 <figures/mixing_techniques/timed.png, id=66, 244.9953pt x 203.0787pt>
@@ -590,7 +590,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  49i,9n,77p,1031b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (32 pages, 373089 bytes).
+Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (32 pages, 372990 bytes).
 PDF statistics:
  197 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
