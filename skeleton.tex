@@ -766,7 +766,7 @@ In regards to the successful experiments, we can observe the results in Figure.
 Surprisingly, the execution time and space used to dump log files increase
 linearly for different simulation time-frames. According to our previous code
 analysis, this is justifiable since clients in MiXiM generate messages based on
-the λ rate. The longer the simulation, the more messages are generated. Hence,
+the $\lambda$ rate. The longer the simulation, the more messages are generated. Hence,
 more processing time and storage space are required. On the other hand,
 Simulator uses only the number of specified target messages regardless of the
 duration. Furthermore, it is notable that in terms of memory usage, MiXiM is
@@ -871,10 +871,239 @@ Besides, Simulator satisfied our reasoning for valid and quality entropy and
 network latency results. 
 
 \chapter{Replication Study}
+This chapter is dedicated to replicating existing literature[], reasoning about
+its outcomes. Minutely, a replication study frames the process of reproducing
+and analysing the experiments of other researchers under similar conditions. The
+purpose of a replication study is primarily to discover if current findings
+provide a valid basis for deciding future research paths.
 
-\section{Studying the Anonymity Trilemma with Discrete-event Mix Network Simulator}
+Within the context of this dissertation, we conduct a short replication study,
+considering previous works[]. Our goal is to see how existing topologies, mixing
+techniques, cover/decoy traffic and the appearance of corrupter Mixes affect the
+latency and anonymity of a Mixnet. This analysis will help us to reason about
+Mixnets behaviour, further extending recent research in chapter 5.
 
-\section{MiXiM: Design Decisions and Empirical Evaluation}
+Replicating previous work was challenging for many reasons. For our part, the
+experimental set-up was not clearly described, and some parameters were missing.
+Consequently, we had to make assumptions on a few occasions. Another essential
+aspect when replicating studies is to use similar environments. Nonetheless, non
+of the previous research had references to the employed hardware.
+
+For this reason, we used our personal computer, comprising an Ubuntu machine
+facilitating a 6-core Intel core i5-8600K and 16 GB of RAM. The experiments
+conducted throughout chapters 4 and 5 use exclusively this equipment. At this
+point, it is worth mentioning that simulating more than 4000 clients on
+Piotrawska's Simulator required more than 16 GB of RAM, which was out practical
+limit. Therefore, we managed to replicate most of the experiments partially. 
+
+\section{Studying the Effect of Mix Network Topologies and Mixing Techniques}
+
+Indubitably, different topologies and mixing techniques, as described chapter 2,
+can impact the anonymity and latency of a Mix Network. Piotrowska saught the
+same questions when writing her study on the anonymity trilemma[]. The conducted
+experiments evaluated and compared three Mixnets implementations - Elixxir
+Network, HOPR and Nym. Each one of these projects is designed using a different
+topology. 
+
+Nym integrates a stratified topology based on three layers with 3 Mixes each.
+Also, the mixing technique used is "continues", where the delay is randomly
+picked from the exponential distribution. On the other hand, Elixxir is a
+Chaumian cascade network based on the cMix protocol[]. Elixxir can be configured
+to run on a single Cascade, like cMix, or use multiple Cascades. Compared to
+Nym, Elixxir uses the batch and reorder mixing technique (for Elixxir Network,
+we assumed a 1000 message threshold). Lastly, HOPR uses a P2P topology, and for
+this reason, we will not include it in this work.
+
+
+In the first place, we are going to compare Single-Cascade and Multi-Cascade
+network topologies. Intuitively, we expect that a Single-Cascade formation will
+have higher anonymity levels since all traffic is routed through a chain of
+Nodes. Shuffling the whole anonymity set of messages on each stop can provide
+greater anonymity. Nonetheless, we assume that latency can be high because the
+network's capacity is caped to the Mix's throughput. The latency can be low for
+a negligible number of clients, but it can get higher if we increase the user
+base.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[height=6cm]{figures/simulator/1_a.png}
+        \caption{Single-Cascade Elixxir Network}
+        \label{fig:elixxir-cascade}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[height=6cm]{figures/simulator/1_b.png}
+        \caption{Multi-Cascade Elixxir Network}
+        \label{fig:elixxir-multi-cascade}
+    \end{subfigure}
+       \caption{MiXiM Baseline Experiments}
+       \label{fig:elixxir}
+ \end{figure}
+
+
+ Indeed, Figures ... and ... portray the expected results. Assuming Cascades of
+ length three and by increasing the number of users, we observe an increase in
+ entropy as well. Also, we remark that the entropy increase rate is much more
+ extensive for a Single-Cascade (1x3) than for a Multi-Cascade(2x3) topology.
+ Nonetheless, there is evidence of poor latency in Figure 1a when the system
+ facilitates more than 2000 users. Latency sharply increases from just above 1
+ second to almost 350 seconds. On the other hand, a Multi-Cascade design allows
+ very low latency by sacrificing a bit of anonymity. From the above analysis, we
+ can deduce that for Cascade and Multi-Cascade topologies, we have to choose
+ between scalability and anonymity. We can not have both.
+
+ In contrast to Cascade topologies, a Stratified topology should scale better.
+ This is intuitive since we can add more Mixes to each layer, distributing
+ traffic into distinct routes. At the same time, we deem it is possible to
+ achieve lower latency since not many messages get congested into a Mix. 
+
+ Indeed, as we notice in Figure ..., Nym's Stratified implementation - 3 layers
+ of 3 Mixes each - can achieve greater anonymity with very low latency. We
+ presume that latency is at the level of 0.3 seconds because Nym realises a
+ continuous mixing technique, while earlier, Elixxir used a batch and reorder
+ technique, meaning that batch size can affect latency. Moreover, entropy is in
+ an uptrend, showing that by increasing the number of users, anonymity increases
+ as well. Therefore, Nym's Stratified configuration can handle significant
+ traffic with increasing anonymity and low latency.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=8cm]{figures/simulator/2.png}
+    \caption{Stratified Nym Network}
+    \label{fig:nym-stratified}
+ \end{figure}
+
+ Using MiXiM, we get similar results. In particular, Figure ... depicts the
+ anonymity of a Stratified topology of 3 layers comprising 10 Mixes each,
+ simulated by setting the $\lambda$ message generation factor to 1 and 10,
+ respectively. We observe that entropy increases when traffic rises, conforming
+ to the previous experiment's results.
+
+ Also, Figure .... shows us the impact on entropy when increasing the number of
+ layers, assuming different average delays on mixing - presuming Continuous
+ mixing. We observe anonymity growing between 1 and 2 layers; however, there is
+ a steady decline afterwards. We are not sure why this is happening.
+ Intuitively, the longer the route a message takes, the bigger should be the
+ entropy. Besides, assuming various mixing delays, the entropy should have been
+ higher for more extended time frames. According to the simulation results, this
+ is not true, as the drawn curves seem primarily identical. Nonetheless, we are
+ not confident about the quality of the results since, as we have studied in
+ chapter 3, MiXiM has many bugs and unrealised features.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[height=6cm]{figures/mixim/2.png}
+        \caption{Impact of different topologies on Entropy}
+        \label{fig:mixim-different-topologies}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[height=6cm]{figures/mixim/3.png}
+        \caption{Impact of different number of layers and average delay on Entropy}
+        \label{fig:mixim-different-layers}
+    \end{subfigure}
+ \end{figure}
+
+\section{Studying the Effect of Traffic}
+
+Cover traffic is an essential tool that both MiXiM and Simulator incorporate.
+Notably, using dummy messages, we increase the anonymity set during the mixing
+stage. Allegedly, we anticipate greater anonymity when having more traffic.
+Also, cover traffic enables us to aim for the same anonymity levels while
+reducing latency. Theoretically, we achieve that by increasing traffic and
+keeping the average delay low - assuming the continuous mixing technique. 
+
+\subsection{Cover Traffic}
+
+Figure ... illustrates the effect of cover traffic on anonymity, assuming
+different cover traffic ratios. We observe that for higher ratios, anonymity is
+greater. Also, increasing the number of users contributes to anonymity. Notably,
+in Figure ... we notice that decreasing the cover traffic ratio from 10:1,  to
+2:1 [Cover:Real] yields acceptable levels of entropy, which is further boosted
+by the increasing number of users. 
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[height=6cm]{figures/simulator/3.png}
+        \caption{Impact of Cover Traffic on Entropy}
+        \label{fig:cover-traffic-ratios}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[height=6cm]{figures/simulator/4.png}
+        \caption{Impact of Cover Traffic on Entropy}
+        \label{fig:cover-traffic-decreasing-ratios}
+    \end{subfigure}
+ \end{figure}
+
+\subsection{Real Traffic}
+
+Real traffic is generated according to the number of users in our network.
+Therefore, more users imply higher anonymity levels. In fact, as noted by
+[simulator] and [mixim], increasing the average delay of Continues mixing offers
+greater anonymity. Nevertheless, what if we want to keep latency down? As we
+notice in Figure ... this can be achieved by keeping the average delay down. As
+more and more users join a Stratified network, the anonymity increases; thus, we
+can employ low mixing delays. As a result, we have a network with low latency
+yet constant anonymity.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=8cm]{figures/simulator/5.png}
+    \caption{Constant Entropy with reduced Latency}
+    \label{fig:nym-stratified-low-latency-constant-anonymity}
+ \end{figure}
+
+\section{Studying the Effect of Corrupt Relays}
+
+Another exciting subject investigated by Guirat et al. is the appearance of
+corrupted Mixes within a Stratified network. The notion of a corrupt node
+implies that the adversary knows all input and output messages with complete
+certainty. 
+
+The results illustrated in Figure ... refer to a Stratified network of 3 layers
+comprising ten mixes each. The mixing technique used is Continues, with an
+average delay of 0.1 seconds. Also, we facilitate 100 clients, each generating
+ten messages per second. For this experimental set-up, we anticipate declining
+anonymity by increasing the percentage of corrupted mixes. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=8cm]{figures/mixim/4.png}
+    \caption{Impact of Corrupted Mixes on Entropy}
+    \label{fig:corrupted-mixes}
+ \end{figure}
+
+Indeed, Figure .... depicts rigid results. There is a steady decrease in
+anonymity each time we increase the fraction of corrupt nodes. Moreover, it is
+interesting to observe that for 0\% and 10\% of corruption, the three-layer scheme
+provides better anonymity, while this is not true for 20\%, 30\% and 40\% of
+corruption. Instead, we notice that the higher the corruption fraction, the
+lower the entropy is for the three-layer and four-layer Stratified Mixnet. In
+contrast, the entropy of a five-layer design seems to perform better.
+Intuitively, this is reasonable because a network with more layers provides the
+possibility of having less interference by an adversary. On the other hand, a
+network with fewer layers but more adversarial mixes implies a greater
+possibility of maliciously influencing the communication between mixes.
+
+Ultimately, considering the effect of the number of layers on the network's
+anonymity according to [mixim], and the results of our experiment in Figure ...,
+we deduce that it is challenging to design a Mixnet. In the first place, we
+observe that increasing the number of layers does not much contribute to the
+anonymity while introducing corrupt relays appears to make more extensive
+networks necessary. Nevertheless, augmenting a Mixnet implies computational and
+hardware expenses. It is beyon question that there are some apparent tradeoffs
+between anonymity and scalability when adversaries emerge.
 
 \chapter{Imbalanced Stratified Mix Networks Study}
 
