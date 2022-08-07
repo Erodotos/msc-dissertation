@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  4 AUG 2022 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  7 AUG 2022 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -272,7 +272,11 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count279
 \l__pdf_internal_box=\box45
-) (/Users/erodotos/Desktop/msc-dissertation/skeleton.aux)
+) (/Users/erodotos/Desktop/msc-dissertation/skeleton.aux
+
+LaTeX Warning: Label `fig:first-layer-variable' multiply defined.
+
+)
 \openout1 = `skeleton.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -640,44 +644,89 @@ Overfull \hbox (0.8054pt too wide) in paragraph at lines 1099--1107
 
 [26]
 Chapter 5.
+
+Overfull \hbox (6.86484pt too wide) in paragraph at lines 1116--1116
+[]\OT1/phv/b/n/17.28 Stratified Net-works with In-creas-ing Num-ber of Mixes 
+ []
+
+<figures/simulator_extentions/compare_layer_size.png, id=171, 481.8pt x 361.35pt>
+File: figures/simulator_extentions/compare_layer_size.png Graphic file (type png)
+<use figures/simulator_extentions/compare_layer_size.png>
+Package pdftex.def Info: figures/simulator_extentions/compare_layer_size.png  used on input line 1135.
+(pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [27
 
-]
+] [28 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/compare_layer_size.png>]
+<figures/simulator_extentions/mix_failure.png, id=179, 481.8pt x 361.35pt>
+File: figures/simulator_extentions/mix_failure.png Graphic file (type png)
+<use figures/simulator_extentions/mix_failure.png>
+Package pdftex.def Info: figures/simulator_extentions/mix_failure.png  used on input line 1180.
+(pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
+ [29 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/mix_failure.png>]
+<figures/simulator_extentions/first_layer_variable.png, id=184, 481.8pt x 361.35pt>
+File: figures/simulator_extentions/first_layer_variable.png Graphic file (type png)
+<use figures/simulator_extentions/first_layer_variable.png>
+Package pdftex.def Info: figures/simulator_extentions/first_layer_variable.png  used on input line 1225.
+(pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
+File: figures/simulator_extentions/first_layer_variable.png Graphic file (type png)
+<use figures/simulator_extentions/first_layer_variable.png>
+Package pdftex.def Info: figures/simulator_extentions/first_layer_variable.png  used on input line 1232.
+(pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/simulator_extentions/middle_layer_variable.png, id=185, 481.8pt x 361.35pt>
+File: figures/simulator_extentions/middle_layer_variable.png Graphic file (type png)
+<use figures/simulator_extentions/middle_layer_variable.png>
+Package pdftex.def Info: figures/simulator_extentions/middle_layer_variable.png  used on input line 1239.
+(pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/first_layer_variable.png>] [31 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/middle_layer_variable.png>]
 Chapter 6.
-(/Users/erodotos/Desktop/msc-dissertation/skeleton.bbl [28
+(/Users/erodotos/Desktop/msc-dissertation/skeleton.bbl [32
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [29
+) [33
 
 ]
 Appendix A.
-[30
+[34
 
 ]
 Appendix B.
-[31
+[35
 
 ]
 Appendix C.
-[32
+[36
 
-] (/Users/erodotos/Desktop/msc-dissertation/skeleton.aux) ) 
+] (/Users/erodotos/Desktop/msc-dissertation/skeleton.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6905 strings out of 480608
- 112356 string characters out of 5903629
- 401123 words of memory out of 5000000
- 22431 multiletter control sequences out of 15000+600000
+ 6934 strings out of 480608
+ 113683 string characters out of 5903629
+ 401206 words of memory out of 5000000
+ 22455 multiletter control sequences out of 15000+600000
  583035 words of font info for 220 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,9n,77p,1031b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (38 pages, 439268 bytes).
+Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (42 pages, 474852 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 256 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 37507 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 37527 words of extra memory for PDF output out of 42996 (max. 10000000)
 
