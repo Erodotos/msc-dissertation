@@ -1111,7 +1111,9 @@ simulation and evaluation of arbitrarily formed Stratified networks.
 Particularly, we assumed that a Stratified Mix Network might have imbalanced
 layers due to crashing Mixes. Within the context of this chapter, we study two
 different types of imbalanced Mixntes, which are (a) dynamically imbalanced and
-(b) statically imbalanced.
+(b) statically imbalanced. Additionally, we examine the impact on anonymity
+caused by increasing the number of Mixes per layer. Lastly, any experiments in
+this chapter operated on our modified version of Piotrawska's Simulator[].
 
 \section{Stratified Networks with Increasing Number of Mixes}
 
@@ -1123,7 +1125,7 @@ Our experimental setup is pretty straightforward. We are using a Stratified
 topology and Continues mixing technique, with an average mixing delay of 0.1
 seconds. Also, we are running many iterations of the experiment using a
 different number of Mixes per layer. Intuitively, we expect designs with more
-Mixes to yield worse anonymity. We justify our hypothesis, assuming that each
+Mixes to yield worse anonymity. We justify our supposition, assuming that each
 Mix will eventually receive less traffic. It is a matter of the fact that less
 traffic implies a smaller anonymity set; hence a global adversary might be able
 to identify message senders and receivers smoothly. Still, assuming that we are
@@ -1162,18 +1164,19 @@ there is wasted time when a Mix tries to find the next live destination.
 
 In our experimental setup, we assumed a Stratified network with three layers
 comprising ten Mixes. Also, we set the mixing techniques to Continues, with an
-average delay of 0.1 seconds. Then we ran our simulation for 20%, 40% and 60%
-probability of failure for each Mix individually. 
+average delay of 0.1 seconds. Further, we allow cover traffic of a 1:1 ratio.
+Then we ran our simulation for 20\%, 40\% and 60\% probability of failure for
+each Mix individually. 
 
-Our initial hypothesis believed that by increasing the failure probability; we
-would see a decline in anonymity because a considerable amount of Mixes would
-receive less traffic. This hypothesis is invalidated since anonymity seems to
-stay the same for different failure probabilities. According to Figure ..., for
-a 20\% crash probability, we get slightly higher entropy, assuming 100 clients in
-the network. Nonetheless, once we scale up the user base and crash
-probabilities, the anonymity ranges in equivalent levels. Besides that, our
-initial assumption for higher latency is false since, as we notice in Figure
-..., latency remains constant. 
+Our initial theory considered that increasing the failure probability would
+decrease anonymity because a considerable amount of Mixes receive less traffic.
+This hypothesis is invalidated since anonymity seems to remain persistent for
+different failure probabilities. According to Figure ..., for a 20\% crash
+probability, we get slightly higher entropy, assuming 100 clients in the
+network. Nonetheless, once we scale up the user base and crash probabilities,
+the anonymity ranges in equivalent levels. Besides that, our initial assumption
+for higher latency is false since, as we notice in Figure ..., latency remains
+constant. 
 
 \begin{figure}[h!]
     \centering
@@ -1184,9 +1187,9 @@ initial assumption for higher latency is false since, as we notice in Figure
 
 
 The above results are reasonable and justified through the simulation logs. In
-more detail, after skimming the log files, we observe that invalid paths occur
-sporadically; hence the increased latency of a message does not affect the
-average network latency. Furthermore, anonymity is not affected because entropy
+more detail, skimming the log files, we observe that invalid paths occur
+sporadically; hence the increased latency of a few messages does not affect the
+average network latency. Moreover, anonymity is not affected because entropy
 fluctuations seem to cancel out each other after simulating many messages for
 many users. In other words, a route of Mixes might not appear many times in the
 short term, but after sampling routes for 1000 messages, all possible paths seem
@@ -1196,29 +1199,29 @@ single value.
 \section{Statically Imbalanced Stratified Network}
 
 Examining the case study of a dynamically imbalanced stratified network was
-fascinating. Therefore, a similar idea arose to investigate statically
-imbalanced Stratified networks. Our perception of "static" describes a formation
+fascinating. A parallel idea arose to investigate statically imbalanced
+Stratified networks as well. Our perception of "static" describes a formation
 where each layer has a fixed number of Mixes, yet this number is different. In
-particular, we seek to study the effect on anonymity when we (a) evenly increase
-the number of Mixes per layer and (b) have more or fewer Mixes on the first,
-middle and last layer of a Stratified Mixnet.
+particular, we seek to study the effect on anonymity when deploying more or
+fewer Mixes on the first, middle and last layer of a Stratified Mixnet.
 
 Our experimental setup comprises a three-layer Stratified topology enabling
 Continues mixing with an average delay of 0.1 seconds. We also employ coverer
 traffic of 1:1 ratio. Initially, we assess the impact on anonymity based on a
-variable number of Mixes in the middle layer, testing three, five and eight
+variable number of Mixes in the middle layer, testing one, two, and three
 Mixes setups. Next, we repeat the same trial starting with 1 Mix and steadily
-increasing this number to 5 Mixes per layer for the first and last layer,
+increasing this number to 3 Mixes per layer for the first and last layer,
 respectively. 
 
 According to our analysis in Figures ..., increasing the number of layers
 regardless of the layer position impacts anonymity likewise. This happens
 because all mixes repeat the same process in all layers and cover traffic flows
-continuously from senders to Mixes and from Mixes to receipients. Nonetheless,
+continuously from senders to Mixes and from Mixes to recipients. Nonetheless,
 something different occurs assuming a smaller user base. Notably, a 3 Mix per
-layer configuration yields slightly lower entropy compared to 4 Mix layers.
-Likewise, a 4 Mix per layer network has slightly lower entropy than a 5 Mix per
-layer design. 
+layer configuration yields slightly higher entropy compared to 2 Mix layers.
+Likewise, a 2 Mix per layer network has narrowly taller entropy than a 1 Mix per
+layer design. The results of this Figure are credible since, by definition,
+routing more traffic into a Mix results in better anonymity.
 
 \begin{figure}[h!]
     \centering
@@ -1241,7 +1244,7 @@ layer design.
     \label{fig:middle-layer-variable}
 \end{figure} 
 
-Furthermore, we observe latency at a constant level of 0.3. The exact value was
+Finally, we observe latency at a constant level of 0.3. The exact value was
 reported in the previous section of chapter 5, where we simulated a dynamically
 imbalanced network. This was expected since latency, as realised earlier, is not
 mainly affected in network designs utilising the Continues mixing technique. 

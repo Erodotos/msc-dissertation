@@ -24,10 +24,10 @@
 \contentsline {section}{\numberline {5.1}Stratified Networks with Increasing Number of Mixes}{27}%
 \contentsline {section}{\numberline {5.2}Dynamically Imbalanced Stratified Network}{28}%
 \contentsline {section}{\numberline {5.3}Statically Imbalanced Stratified Network}{30}%
-\contentsline {chapter}{\numberline {6}Conclusion}{32}%
-\contentsline {section}{\numberline {6.1}Final Reminder}{32}%
-\contentsline {chapter}{Bibliography}{33}%
-\contentsline {chapter}{\numberline {A}First appendix}{34}%
-\contentsline {section}{\numberline {A.1}First section}{34}%
-\contentsline {chapter}{\numberline {B}Participants' information sheet}{35}%
-\contentsline {chapter}{\numberline {C}Participants' consent form}{36}%
+\contentsline {chapter}{\numberline {6}Conclusion}{33}%
+\contentsline {section}{\numberline {6.1}Final Reminder}{33}%
+\contentsline {chapter}{Bibliography}{34}%
+\contentsline {chapter}{\numberline {A}First appendix}{35}%
+\contentsline {section}{\numberline {A.1}First section}{35}%
+\contentsline {chapter}{\numberline {B}Participants' information sheet}{36}%
+\contentsline {chapter}{\numberline {C}Participants' consent form}{37}%

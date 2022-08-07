@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  7 AUG 2022 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  7 AUG 2022 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -645,69 +645,69 @@ Overfull \hbox (0.8054pt too wide) in paragraph at lines 1099--1107
 [26]
 Chapter 5.
 
-Overfull \hbox (6.86484pt too wide) in paragraph at lines 1116--1116
+Overfull \hbox (6.86484pt too wide) in paragraph at lines 1118--1118
 []\OT1/phv/b/n/17.28 Stratified Net-works with In-creas-ing Num-ber of Mixes 
  []
 
 <figures/simulator_extentions/compare_layer_size.png, id=171, 481.8pt x 361.35pt>
 File: figures/simulator_extentions/compare_layer_size.png Graphic file (type png)
 <use figures/simulator_extentions/compare_layer_size.png>
-Package pdftex.def Info: figures/simulator_extentions/compare_layer_size.png  used on input line 1135.
+Package pdftex.def Info: figures/simulator_extentions/compare_layer_size.png  used on input line 1137.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [27
 
 ] [28 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/compare_layer_size.png>]
 <figures/simulator_extentions/mix_failure.png, id=179, 481.8pt x 361.35pt>
 File: figures/simulator_extentions/mix_failure.png Graphic file (type png)
 <use figures/simulator_extentions/mix_failure.png>
-Package pdftex.def Info: figures/simulator_extentions/mix_failure.png  used on input line 1180.
+Package pdftex.def Info: figures/simulator_extentions/mix_failure.png  used on input line 1183.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
  [29 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/mix_failure.png>]
 <figures/simulator_extentions/first_layer_variable.png, id=184, 481.8pt x 361.35pt>
 File: figures/simulator_extentions/first_layer_variable.png Graphic file (type png)
 <use figures/simulator_extentions/first_layer_variable.png>
-Package pdftex.def Info: figures/simulator_extentions/first_layer_variable.png  used on input line 1225.
-(pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
-File: figures/simulator_extentions/first_layer_variable.png Graphic file (type png)
-<use figures/simulator_extentions/first_layer_variable.png>
-Package pdftex.def Info: figures/simulator_extentions/first_layer_variable.png  used on input line 1232.
+Package pdftex.def Info: figures/simulator_extentions/first_layer_variable.png  used on input line 1228.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: figures/simulator_extentions/first_layer_variable.png Graphic file (type png)
+<use figures/simulator_extentions/first_layer_variable.png>
+Package pdftex.def Info: figures/simulator_extentions/first_layer_variable.png  used on input line 1235.
+(pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <figures/simulator_extentions/middle_layer_variable.png, id=185, 481.8pt x 361.35pt>
 File: figures/simulator_extentions/middle_layer_variable.png Graphic file (type png)
 <use figures/simulator_extentions/middle_layer_variable.png>
-Package pdftex.def Info: figures/simulator_extentions/middle_layer_variable.png  used on input line 1239.
+Package pdftex.def Info: figures/simulator_extentions/middle_layer_variable.png  used on input line 1242.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/first_layer_variable.png>] [31 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/middle_layer_variable.png>]
+[30] [31 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/first_layer_variable.png>] [32 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/middle_layer_variable.png>]
 Chapter 6.
-(/Users/erodotos/Desktop/msc-dissertation/skeleton.bbl [32
+(/Users/erodotos/Desktop/msc-dissertation/skeleton.bbl [33
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [33
+) [34
 
 ]
 Appendix A.
-[34
-
-]
-Appendix B.
 [35
 
 ]
-Appendix C.
+Appendix B.
 [36
+
+]
+Appendix C.
+[37
 
 ] (/Users/erodotos/Desktop/msc-dissertation/skeleton.aux)
 
@@ -723,10 +723,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  49i,9n,77p,1031b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (42 pages, 474852 bytes).
+Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (43 pages, 475491 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 260 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  37527 words of extra memory for PDF output out of 42996 (max. 10000000)
 
