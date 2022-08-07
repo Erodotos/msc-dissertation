@@ -1211,17 +1211,7 @@ traffic of 1:1 ratio. Initially, we assess the impact on anonymity based on a
 variable number of Mixes in the middle layer, testing one, two, and three
 Mixes setups. Next, we repeat the same trial starting with 1 Mix and steadily
 increasing this number to 3 Mixes per layer for the first and last layer,
-respectively. 
-
-According to our analysis in Figures ..., increasing the number of layers
-regardless of the layer position impacts anonymity likewise. This happens
-because all mixes repeat the same process in all layers and cover traffic flows
-continuously from senders to Mixes and from Mixes to recipients. Nonetheless,
-something different occurs assuming a smaller user base. Notably, a 3 Mix per
-layer configuration yields slightly higher entropy compared to 2 Mix layers.
-Likewise, a 2 Mix per layer network has narrowly taller entropy than a 1 Mix per
-layer design. The results of this Figure are credible since, by definition,
-routing more traffic into a Mix results in better anonymity.
+respectively.
 
 \begin{figure}[h!]
     \centering
@@ -1243,6 +1233,16 @@ routing more traffic into a Mix results in better anonymity.
     \caption{need to add caption}
     \label{fig:middle-layer-variable}
 \end{figure} 
+
+According to our analysis in Figures ..., increasing the number of layers
+regardless of the layer position impacts anonymity likewise. This happens
+because all mixes repeat the same process in all layers and cover traffic flows
+continuously from senders to Mixes and from Mixes to recipients. Nonetheless,
+something different occurs assuming a smaller user base. Notably, a 3 Mix per
+layer configuration yields slightly higher entropy compared to 2 Mix layers.
+Likewise, a 2 Mix per layer network has narrowly taller entropy than a 1 Mix per
+layer design. The results of this Figure are credible since, by definition,
+routing more traffic into a Mix results in better anonymity.
 
 Finally, we observe latency at a constant level of 0.3. The exact value was
 reported in the previous section of chapter 5, where we simulated a dynamically
