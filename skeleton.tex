@@ -139,10 +139,10 @@ implementations[]. Soon, researchers realised the potential of Mixnets and their
 applications to many domains. Such applications include remailers[], instant
 messaging apps[], or even more recently, blockchain transaction routing apps
 that provide anonymity[]. In addition, researchers have developed two
-simulators[] to empirically evaluate Mix Networks' performance and anonymity.
-When designing a Mixnet, we can have several design configurations. With the
-term configurations, we refer to different mixing techniques and topologies,
-which we will explain later in this document.
+simulators[] - Simulator and MiXiM - to empirically evaluate Mix Networks'
+performance and anonymity. When designing a Mixnet, we can have several design
+configurations. With the term configurations, we refer to different mixing
+techniques and topologies, which we will explain later in this study.
 
 Within the context of this project, we are interested in experimenting with the
 existing Mix Network simulators, trying to answer the following questions:  
@@ -191,9 +191,9 @@ same time, the simulation runtime sharply increases.
 In addition, we observe that a dynamically imbalanced Stratified Mixnet is not
 compromised in terms of anonymity since all mixes will receive the same amount
 of traffic in the long term. Similarly, a Stratified Mixnet with a constantly
-different number of nodes on each layer - statically dynamic - achieves the same
-levels of anonymity. As noticed, the number of mixes in the middle, first, and
-last layers are not significantly affecting anonymity. In other words, all
+different number of nodes on each layer - statically imbalanced - achieves the
+same levels of anonymity. As noticed, the number of mixes in the middle, first,
+and last layers are not significantly affecting anonymity. In other words, all
 layers affect anonymity equally. Furthermore, assuming the same traffic while
 increasing the number of mixes per layer indicates a decline in anonymity. Also,
 we find out that the number of users sending and receiving messages over the
@@ -942,14 +942,14 @@ base.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[height=6cm]{figures/simulator/1_a.png}
+        \includegraphics[width=\textwidth]{figures/simulator/1_a.png}
         \caption{Single-Cascade Elixxir Network}
         \label{fig:elixxir-cascade}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[height=6cm]{figures/simulator/1_b.png}
+        \includegraphics[width=\textwidth]{figures/simulator/1_b.png}
         \caption{Multi-Cascade Elixxir Network}
         \label{fig:elixxir-multi-cascade}
     \end{subfigure}
@@ -1011,14 +1011,14 @@ base.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[height=6cm]{figures/mixim/2.png}
+        \includegraphics[width=\textwidth]{figures/mixim/2.png}
         \caption{Impact of different topologies on Entropy}
         \label{fig:mixim-different-topologies}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[height=6cm]{figures/mixim/3.png}
+        \includegraphics[width=\textwidth]{figures/mixim/3.png}
         \caption{Impact of different number of layers and average delay on Entropy}
         \label{fig:mixim-different-layers}
     \end{subfigure}
@@ -1047,14 +1047,14 @@ by the increasing number of users.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[height=6cm]{figures/simulator/3.png}
+        \includegraphics[width=\textwidth]{figures/simulator/3.png}
         \caption{Impact of Cover Traffic on Entropy}
         \label{fig:cover-traffic-ratios}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[height=6cm]{figures/simulator/4.png}
+        \includegraphics[width=\textwidth]{figures/simulator/4.png}
         \caption{Impact of Cover Traffic on Entropy}
         \label{fig:cover-traffic-decreasing-ratios}
     \end{subfigure}
@@ -1305,8 +1305,8 @@ to acceptable levels. Furthermore, it is worth mentioning that in the presence
 of corrupted relays, assuming a Stratified network, the anonymity decreases. 
 
 The last contribution of our project is the investigation of dynamically and
-statically imbalanced Stratified Mix Networks. As of writing this document, we
-are unaware of similar work in this field; hence our research on imbalanced
+statically imbalanced Stratified Mix Networks. As of writing this dissertation,
+we are unaware of similar work in this field; hence, our research on imbalanced
 networks can provide valuable insights. A dynamically imbalanced network assumes
 that each Mix fails with a certain probability on each transmission round.
 Anonymity and latency on such networks are not affected since after sending and
@@ -1317,7 +1317,7 @@ timeframes. Notably, we found out that the number of Mixes per layer does not
 affect anonymity, especially on networks with large user bases. However, for a
 limited number of users, we observed a negligible difference. Deploying fewer
 Mixes, regardless of the layer, will equally favour and improve anonymity.
-Finally, static and dynamic imbalanced networks' latency is low, assuming the
+Finally, static and dynamic imbalanced networks' latency is low, considering the
 tested Stratifed topology and Continues mixing.
 
 In the future, we suggest exploring imbalanced Stratified Mix Networks further.
@@ -1338,7 +1338,7 @@ carefully to use a few computational resources. For this reason, we propose
 using Go language, a statically typed compiled language similar to C but with a
 low memory footprint.
 
-Moreover, it is essential to highlight that Mix Networks enable people to form
+To conclude, it is essential to highlight that Mix Networks enable people to form
 liberal societies where respect for privacy and anonymity prevails. Certainly,
 current research provides robust knowledge on this topic. In my opinion, we need
 to practically develop more applications that will benefit from using an

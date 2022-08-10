@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  10 AUG 2022 09:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  10 AUG 2022 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,23 +547,13 @@ Chapter 4.
 File: figures/simulator/1_a.png Graphic file (type png)
 <use figures/simulator/1_a.png>
 Package pdftex.def Info: figures/simulator/1_a.png  used on input line 945.
-(pdftex.def)             Requested size: 227.62228pt x 170.71652pt.
-
-Overfull \hbox (41.96931pt too wide) in paragraph at lines 945--946
- [][] 
- []
-
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/simulator/1_b.png, id=138, 481.8pt x 361.35pt>
 File: figures/simulator/1_b.png Graphic file (type png)
 <use figures/simulator/1_b.png>
 Package pdftex.def Info: figures/simulator/1_b.png  used on input line 952.
-(pdftex.def)             Requested size: 227.62228pt x 170.71652pt.
-
-Overfull \hbox (41.96931pt too wide) in paragraph at lines 952--953
- [][] 
- []
-
-[22 </Users/erodotos/Desktop/msc-dissertation/figures/simulator/1_a.png> </Users/erodotos/Desktop/msc-dissertation/figures/simulator/1_b.png>]
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+ [22 </Users/erodotos/Desktop/msc-dissertation/figures/simulator/1_a.png> </Users/erodotos/Desktop/msc-dissertation/figures/simulator/1_b.png>]
 <figures/simulator/2.png, id=144, 481.8pt x 361.35pt>
 File: figures/simulator/2.png Graphic file (type png)
 <use figures/simulator/2.png>
@@ -574,58 +564,41 @@ Package pdftex.def Info: figures/simulator/2.png  used on input line 988.
 File: figures/mixim/2.png Graphic file (type png)
 <use figures/mixim/2.png>
 Package pdftex.def Info: figures/mixim/2.png  used on input line 1014.
-(pdftex.def)             Requested size: 227.62228pt x 170.71652pt.
-
-Overfull \hbox (41.96931pt too wide) in paragraph at lines 1014--1015
- [][] 
- []
-
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/mixim/3.png, id=150, 481.8pt x 361.35pt>
 File: figures/mixim/3.png Graphic file (type png)
 <use figures/mixim/3.png>
 Package pdftex.def Info: figures/mixim/3.png  used on input line 1021.
-(pdftex.def)             Requested size: 227.62228pt x 170.71652pt.
-
-Overfull \hbox (41.96931pt too wide) in paragraph at lines 1021--1022
- [][] 
- []
-
-[24 </Users/erodotos/Desktop/msc-dissertation/figures/mixim/2.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixim/3.png>]
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
+ [24 </Users/erodotos/Desktop/msc-dissertation/figures/mixim/2.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixim/3.png>]
 <figures/simulator/3.png, id=156, 481.8pt x 361.35pt>
 File: figures/simulator/3.png Graphic file (type png)
 <use figures/simulator/3.png>
 Package pdftex.def Info: figures/simulator/3.png  used on input line 1050.
-(pdftex.def)             Requested size: 227.62228pt x 170.71652pt.
-
-Overfull \hbox (41.96931pt too wide) in paragraph at lines 1050--1051
- [][] 
- []
-
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/simulator/4.png, id=157, 481.8pt x 361.35pt>
 File: figures/simulator/4.png Graphic file (type png)
 <use figures/simulator/4.png>
 Package pdftex.def Info: figures/simulator/4.png  used on input line 1057.
-(pdftex.def)             Requested size: 227.62228pt x 170.71652pt.
-
-Overfull \hbox (41.96931pt too wide) in paragraph at lines 1057--1058
- [][] 
- []
-
+(pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/simulator/5.png, id=158, 481.8pt x 361.35pt>
 File: figures/simulator/5.png Graphic file (type png)
 <use figures/simulator/5.png>
 Package pdftex.def Info: figures/simulator/5.png  used on input line 1076.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25 </Users/erodotos/Desktop/msc-dissertation/figures/simulator/3.png> </Users/erodotos/Desktop/msc-dissertation/figures/simulator/4.png>]
-<figures/mixim/4.png, id=165, 481.8pt x 361.35pt>
+<figures/mixim/4.png, id=159, 481.8pt x 361.35pt>
 File: figures/mixim/4.png Graphic file (type png)
 <use figures/mixim/4.png>
 Package pdftex.def Info: figures/mixim/4.png  used on input line 1096.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
- [26 </Users/erodotos/Desktop/msc-dissertation/figures/simulator/5.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixim/4.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25 </Users/erodotos/Desktop/msc-dissertation/figures/simulator/3.png> </Users/erodotos/Desktop/msc-dissertation/figures/simulator/4.png>] [26 </Users/erodotos/Desktop/msc-dissertation/figures/simulator/5.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixim/4.png>]
 Overfull \hbox (0.8054pt too wide) in paragraph at lines 1113--1121
 []\OT1/ptm/m/n/12 (-20) Ultimately, con-sid-er-ing the ef-fect of the num-ber of lay-ers on the net-work's anonymity
  []
@@ -708,7 +681,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  49i,9n,77p,1031b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (46 pages, 473878 bytes).
+Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (46 pages, 473884 bytes).
 PDF statistics:
  269 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams

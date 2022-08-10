@@ -25,7 +25,7 @@
 \contentsline {chapter}{\numberline {4}Replication Study}{21}%
 \contentsline {section}{\numberline {4.1}Studying the Effect of Mix Network Topologies and Mixing Techniques}{22}%
 \contentsline {section}{\numberline {4.2}Studying the Effect of Traffic}{24}%
-\contentsline {subsection}{\numberline {4.2.1}Cover Traffic}{25}%
+\contentsline {subsection}{\numberline {4.2.1}Cover Traffic}{24}%
 \contentsline {subsection}{\numberline {4.2.2}Real Traffic}{25}%
 \contentsline {section}{\numberline {4.3}Studying the Effect of Corrupt Relays}{25}%
 \contentsline {chapter}{\numberline {5}Exteding Current Research Using Simulator}{28}%
