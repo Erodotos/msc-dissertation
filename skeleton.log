@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  9 AUG 2022 08:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  10 AUG 2022 09:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -674,25 +674,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [31 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/first_layer_variable.png>] [32 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/middle_layer_variable.png>] [33]
 Chapter 6.
-(/Users/erodotos/Desktop/msc-dissertation/skeleton.bbl [34
+[34
 
-]
+] [35] (/Users/erodotos/Desktop/msc-dissertation/skeleton.bbl [36]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [35
+) [37
 
 ]
 Appendix A.
-[36
+[38
 
 ]
 Appendix B.
-[37
+[39
 
 ]
 Appendix C.
-[38
+[40
 
 ] (/Users/erodotos/Desktop/msc-dissertation/skeleton.aux)
 
@@ -700,18 +700,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6911 strings out of 480608
- 113305 string characters out of 5903629
+ 6906 strings out of 480608
+ 113240 string characters out of 5903629
  398206 words of memory out of 5000000
- 22433 multiletter control sequences out of 15000+600000
- 582922 words of font info for 221 fonts, out of 8000000 for 9000
+ 22431 multiletter control sequences out of 15000+600000
+ 582214 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,9n,77p,1031b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (44 pages, 469750 bytes).
+Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (46 pages, 473878 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 269 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 37015 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 36503 words of extra memory for PDF output out of 42996 (max. 10000000)
 

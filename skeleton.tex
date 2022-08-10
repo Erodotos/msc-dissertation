@@ -1268,23 +1268,81 @@ mainly affected in network designs utilising the Continues mixing technique.
 
 \chapter{Conclusion}
 
-\section{Final Reminder}
+Mix Networks provide anonymous communication against global adversaries
+passively eavesdropping on network transmissions. Mixnets designs might vary
+according to their topological structure, mixing algorithms and other parameters
+such as cover/decoy traffic generation. Researchers developed two event-driven
+simulators to assess different network designs in terms of performance and
+anonymity.
 
-The body of your dissertation, before the references and any appendices,
-\emph{must} finish by page~40. The introduction, after preliminary material,
-should have started on page~1.
+Within the context of this MSc dissertation project, we report on the existing
+simulators[code] - Simulator and MiXiM - shedding light on which one should be
+trusted and further developed. To bring conclusiveness to this matter, we
+performed a qualitative and quantitative analysis. Mainly, we found out that
+MiXiM furnishes a plethora of simulation features compared to Simulator.
+Nonetheless, our study highlighted that we could not trust MiXiM since many
+unrealised functions exist in the codebase. On the other hand, Simulator offers
+a limited number of features, yet it is functional, generating justifiable
+results. In addition, we crafted a baseline simulation scenario to test the
+performance of both projects. MiXiM baseline simulations remain incomplete due
+to runtime crashes. Regarding Simulator, we observe poor performance and
+extended execution timeframes when increasing the number of users in a network.
+Particularly, a large user base requires immense amounts of RAM (4000 users
+mandate roughly 16GB of RAM).
 
-You may not change the dissertation format (e.g., reduce the font size, change
-the margins, or reduce the line spacing from the default 1.5 spacing). Be
-careful if you copy-paste packages into your document preamble from elsewhere.
-Some \LaTeX{} packages, such as \texttt{fullpage} or \texttt{savetrees}, change
-the margins of your document. Do not include them!
+Further, we conducted a short replication study attempting to validate previous
+research[] and reason about their results. We manage to partially replicate
+experiments because of hardware limitations. As mentioned in chapter 4, our
+environment's RAM was caped to 16GB. Nonetheless, our analysis revealed that,
+indeed anonymity of a Mixnet can be affected by the network's topology, mixing
+technique and the generation of cover/decoy traffic. Notably, a Cascade network
+might achieve greater anonymity than a Multi-Cascade and a Stratified network.
+Also, Continues mixing yields low latency overheads and increased anonymity due
+to their memory-less property. Another intriguing highlight is that a large
+network user base positively impacts its anonymity. Also, cover traffic and
+mixing delay are vital for networks with small userbases as they keep anonymity
+to acceptable levels. Furthermore, it is worth mentioning that in the presence
+of corrupted relays, assuming a Stratified network, the anonymity decreases. 
 
-Over-length or incorrectly-formatted dissertations will not be accepted and you
-would have to modify your dissertation and resubmit. You cannot assume we will
-check your submission before the final deadline and if it requires resubmission
-after the deadline to conform to the page and style requirements you will be
-subject to the usual late penalties based on your final submission time.
+The last contribution of our project is the investigation of dynamically and
+statically imbalanced Stratified Mix Networks. As of writing this document, we
+are unaware of similar work in this field; hence our research on imbalanced
+networks can provide valuable insights. A dynamically imbalanced network assumes
+that each Mix fails with a certain probability on each transmission round.
+Anonymity and latency on such networks are not affected since after sending and
+receiving numerous messages; the traffic passed through all Mixes converges,
+cancelling temporal anonymity issues. On the other hand, statically imbalanced
+networks consider that a layer might have more or less Mixes for longer
+timeframes. Notably, we found out that the number of Mixes per layer does not
+affect anonymity, especially on networks with large user bases. However, for a
+limited number of users, we observed a negligible difference. Deploying fewer
+Mixes, regardless of the layer, will equally favour and improve anonymity.
+Finally, static and dynamic imbalanced networks' latency is low, assuming the
+tested Stratifed topology and Continues mixing.
+
+In the future, we suggest exploring imbalanced Stratified Mix Networks further.
+Particularly, it is worth experimenting with all mixing techniques since
+threshold and timed Mixes might behave differently in an imbalanced network.
+Besides that, we can adapt the dynamically imbalanced concept for Cascade and
+Multi-Cascade topologies. Essentially, in Cascade networks, each Mix is a
+potential point of failure. Therefore,  simulating imbalanced Cascades will
+allow us to evaluate the actual overhead in latency and anonymity when a Mix
+frankly goes down. To frame all of our recommendations, we propose
+the development of an efficient and modular event-driven simulator, which will
+support all types of topologies, mixing techniques and cover traffic
+functionalities. In addition, as reported in the literature [], there are
+several methods to encrypt messages flowing through Mixes. The new simulator
+should allow users to explicitly define any delays that occur due to encryption
+and decryption of messages. Further, a new simulator should be developed
+carefully to use a few computational resources. For this reason, we propose
+using Go language, a statically typed compiled language similar to C but with a
+low memory footprint.
+
+Moreover, it is essential to highlight that Mix Networks enable people to form
+liberal societies where respect for privacy and anonymity prevails. Certainly,
+current research provides robust knowledge on this topic. In my opinion, we need
+to practically develop more applications that will benefit from using an
+underline Mixnet. Finally, there is always room for improvement.
 
 \bibliographystyle{plain}
 \bibliography{mybibfile}
