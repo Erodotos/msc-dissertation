@@ -914,7 +914,7 @@ reason, we used our personal computer, comprising an Ubuntu machine facilitating
 a 6-core Intel core i5-8600K and 16 GB of RAM. The experiments conducted
 throughout chapters 4 and 5 use exclusively this equipment. At this point, it is
 worth mentioning that simulating more than 4000 clients on Piotrowska's
-Simulator required more than 16 GB of RAM, which was out practical limit.
+Simulator required more than 16 GB of RAM, which was out of our practical limit.
 Therefore, we managed to replicate most of the experiments partially. 
 
 \section{Studying the Effect of Mix Network Topologies and Mixing Techniques}
@@ -926,7 +926,7 @@ experiments evaluated and compared three Mixnets implementations - Nym, Elixxir
 Network, and HOPR. Each one of these projects is designed using a different
 topology. 
 
-Nym integrates a stratified topology based on three layers with 3 Mixes each.
+Nym integrates a stratified topology based on three layers with three Mixes each.
 Also, the mixing technique used is Continues, where the delay is randomly
 picked from the exponential distribution. On the other hand, Elixxir is a
 Chaumian cascade network based on the cMix protocol[]. Elixxir can be configured
@@ -942,7 +942,7 @@ have higher anonymity levels since all traffic is routed through a chain of
 Nodes. Shuffling the whole anonymity set of messages on each stop can provide
 greater anonymity. Nonetheless, we assume that latency can be high because the
 network's capacity is caped to the Mix's throughput. The latency can be low for
-a negligible number of clients, but it can get higher if we increase the user
+a negligible number of clients, but it will be higher if we increase the user
 base.
 
 \begin{figure}[h!]
@@ -983,9 +983,9 @@ base.
  achieve lower latency since not many messages get congested into a Mix. 
 
  As we notice in Figure \ref{fig:nym-stratified}, Nym's Stratified
- implementation - 3 layers of 3 Mixes each - can achieve greater anonymity with
+ implementation - three layers of three Mixes each - can achieve greater anonymity with
  very low latency. We presume that latency is at the level of 0.3 seconds
- because Nym realises a continuous mixing technique, while earlier, Elixxir used
+ because Nym realises a Continues mixing technique, while earlier, Elixxir used
  a batch and reorder technique, meaning that batch size can affect latency.
  Moreover, entropy is in an uptrend, showing that by increasing the number of
  users, anonymity increases as well. Therefore, Nym's Stratified configuration
@@ -998,22 +998,24 @@ base.
     \label{fig:nym-stratified}
  \end{figure}
 
- Using MiXiM, we get similar results. In particular, Figure \ref{fig:mixim-different-generation} depicts the
- anonymity of a Stratified topology of 3 layers comprising 10 Mixes each,
- simulated by setting the $\lambda$ message generation factor to 1 and 10,
- respectively. We observe that entropy increases when traffic rises, conforming
- to the previous experiment's results.
+ Using MiXiM, we get similar results. In particular, Figure
+ \ref{fig:mixim-different-generation} depicts the anonymity of a Stratified
+ topology of three layers comprising ten Mixes each, simulated by setting the
+ $\lambda$ message generation factor to 1 and 10, respectively. We observe that
+ entropy increases when traffic rises, conforming to the previous experiment's
+ results.
 
- Also, Figure \ref{fig:mixim-different-layers} shows us the impact on entropy when increasing the number of
- layers, assuming different average delays on mixing - presuming Continuous
- mixing. We observe anonymity growing between 1 and 2 layers; however, there is
- a steady decline afterwards. We are not sure why this happens.
- Intuitively, the longer the route a message takes, the bigger should be the
- entropy. Besides, assuming various mixing delays, the entropy should have been
- higher for more extended time frames. According to the simulation results, this
- is not true, as the drawn curves seem primarily identical. Nonetheless, we are
- not confident about the quality of the results since, as we have studied in
- chapter 3, MiXiM has many bugs and unrealised features.
+ Also, Figure \ref{fig:mixim-different-layers} shows us the impact on entropy
+ when increasing the number of layers, assuming different average delays on
+ mixing - presuming Continuous mixing. We observe anonymity growing between one
+ and two layers; however, there is a steady decline afterwards. We are not sure
+ why this happens. Intuitively, the longer the route a message takes, the bigger
+ should be the entropy. Besides, assuming various mixing delays, the entropy
+ should have been higher for more extended time frames. According to the
+ simulation results, this is not true, as the drawn curves seem primarily
+ identical. Nonetheless, we are not confident about the quality of the results
+ since, as we have studied in chapter 3, MiXiM has many bugs and unrealised
+ features.
 
 \begin{figure}[h!]
     \centering
@@ -1039,7 +1041,7 @@ Notably, using dummy messages, we increase the anonymity set during the mixing
 stage. Allegedly, we anticipate greater anonymity when having more traffic.
 Also, cover traffic enables us to aim for the same anonymity levels while
 reducing latency. Theoretically, we achieve that by increasing traffic and
-keeping the average delay low - assuming the continuous mixing technique. 
+keeping the average delay low - assuming the Continuous mixing technique. 
 
 \subsection{Cover Traffic}
 
@@ -1089,15 +1091,15 @@ delays. As a result, we have a network with low latency yet constant anonymity.
 
 \section{Studying the Effect of Corrupt Relays}
 
-Another exciting subject investigated by Guirat et al. is the appearance of
+Another exciting subject investigated by Guirat et al.[] is the appearance of
 corrupted Mixes within a Stratified network. The notion of a corrupt node
 implies that the adversary knows all input and output messages on a Mix with
 complete certainty. 
 
 The results illustrated in Figure \ref{fig:corrupted-mixes} refer to a
-Stratified network of 3 layers comprising ten mixes each. The mixing technique
+Stratified network of three layers comprising ten mixes each. The mixing technique
 used is Continues, with an average delay of 0.1 seconds. Also, we facilitate 100
-clients, each generating ten messages per second. For this experimental set-up,
+clients, each generating 10 messages per second. For this experimental set-up,
 we anticipate declining anonymity by increasing the percentage of corrupted
 mixes. 
 
@@ -1117,7 +1119,7 @@ the corruption fraction, the lower the entropy is for the three-layer and
 four-layer Stratified Mixnet. In contrast, the entropy of a five-layer design
 seems to perform better. Intuitively, this is reasonable because a network with
 more layers provides the possibility of having less interference by an
-adversary. On the other hand, a network with fewer layers but more adversarial
+adversary. On the other side, a network with fewer layers but more adversarial
 mixes implies a greater possibility of maliciously influencing the communication
 between mixes.
 
