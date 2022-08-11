@@ -21,6 +21,43 @@
 % layout or style of the dissertation. By including the ugcheck package above,
 % you should catch most accidental changes of page layout though.
 
+\usepackage{listings}
+\usepackage{xcolor}
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+    basicstyle=\normalfont\ttfamily,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    backgroundcolor=\color{background},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
+}
+
 \usepackage{microtype} % recommended, but you can remove if it causes problems
 
    
@@ -1369,25 +1406,131 @@ underline Mixnet. Finally, there is always room for improvement.
 % You may delete everything from \appendix up to \end{document} if you don't need it.
 \appendix
 
-\chapter{First appendix}
+\chapter{Sample Configuration Files}
 
-\section{First section}
+\section{Simulator Configuration File}
 
-Any appendices, including any required ethics information, should be included
-after the references.
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+    "experiment_id": "Simulation Stratified",
+    "logging":  {
+        "enabled": true,
+        "dir": "logs",
+        "client_log": "client_log.json",
+        "mix_log": "mix_log.json"
+    },
+    "phases":   {
+        "burnin": 100,
+        "execution": 500,
+        "cooldown": 2000
+    },
+    "network": {
+        "topology" : "stratified",
+        "cascade" : {
+          "cascade_len": 3,
+          "num_gateways": 0},
+        "stratified" : {
+          "layers": 3,
+          "layer_size": 3,
+          "num_gateways": 0
+        },
+        "multi_cascade" : {
+          "cascade_len" : 3,
+          "num_cascades" : 2
+        },
+        "p2p" : {
+          "path_length" : 3
+        }
+    },
+    "packet": {
+        "packet_size": 0
+    },
+    "message": {
+        "min_msg_size": 2,
+        "max_msg_size": 2
+    },
+    "mixnodes": {
+		"avg_delay": 0.1,
+        "batch": false,
+        "batch_size" : 1000,
+		"AQM":false
+    },
+    "clients": {
+        "number":100,
+        "sim_add_buffer": 1.0,
+        "rate_sending": 1.0,
+        "rate_ack": 0.5,
+        "cover_traffic":false,
+        "cover_traffic_rate":1.0,
+        "ACK":false,
+        "retransmit":false,
+        "dummies_acks":false,
+        "max_retransmissions":5
+    },
+    "misc": {
+        "id_len": 32,
+        "num_target_packets": 1000
+    }
+}
+\end{lstlisting}
 
-Markers do not have to consider appendices. Make sure that your contributions
-are made clear in the main body of the dissertation (within the page limit).
+\section{MiXiM Configuration File}
 
-\chapter{Participants' information sheet}
+\begin{lstlisting}[language=json,firstnumber=1]
+[DEFAULT]
+n_clients= 100
+lambda_c = 1
 
-If you had human participants, include key information that they were given in
-an appendix, and point to it from the ethics declaration.
+[TOPOLOGY]
+#Topology can take stratified, cascade, free route
+type = stratified
+fully_connected = True
+routing = source
+E2E = 1
+n_layers = 1
+#If stratified
+l_mixes_per_layer = 10
+#If Cascades
+n_cascades = 3
+[MIXING]
+#mix_type takes poisson, time, or pool
+mix_type = poisson
+mu = 1
+timeout = 2
+threshold = 100
+flush_percent = 0.1
+[DUMMIES]
+client_dummies = False
+rate_client_dummies = 1
+link_based_dummies = True
+multiple_hop_dummies = False
+rate_mix_dummies = 1
+[NODES_SELETION]
+#Probability over nodes selection: uniform, specific
+probability = Uniform
+#if specific
+    #if topology = stratified
+w_mix_l1 = [0.5]
+w_mix_l2 = [0.3]
+w_mix_l3 = [0.1]
+    #if topology = cascade
+w_cascades = [0.8, 0.1, 0.1]
 
-\chapter{Participants' consent form}
+[THREATMODEL]
+corrupt_mixes = 0
+balanced_corruption = True    
+\end{lstlisting}
 
-If you had human participants, include information about how consent was
-gathered in an appendix, and point to it from the ethics declaration.
+
+\chapter{cProfile Execution Trees}
+
+\section{Simulator Execution Tree}
+
+\includegraphics[width=\textwidth]{images/cprofile_simulator.png}
+
+\section{MiXiM Execution Tree}
+
+\includegraphics[width=\textwidth]{images/cprofile_mixim.png}
 
 
 \end{document}
