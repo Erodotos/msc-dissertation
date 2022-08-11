@@ -251,12 +251,12 @@ limitations in terms of scalability. Notably, its maximum throughput is caped to
 the throughput of a single Mix; thus, network latency is high as well. Besides
 that, If we have any malicious node on the chain, the whole system can be
 compromised or fail to deliver any messages, turning the Mix into a single point
-of failure. We can comprehend what a cascade topology looks like in Figure..
+of failure. We can comprehend what a cascade topology looks like in Figure \ref{fig:cascade}
 
 \subsection{Multi-Cascade}
 This topology removes the Cascade topology limitations of scalability and
-single point of failure by deploying multiple parallel Cascades. Figure ....
-depicts this topology. As we can understand, the main advantage of this formation is
+single point of failure by deploying multiple parallel Cascades. Figure \ref{fig:multi-cascade}
+depicts this topology. As we understand, the main advantage of this formation is
 the greater availability and scalability. The user can select a different
 Cascade to transmit a message. Also, having multiple Cascades allows the network
 to process more messages simultaneously. However, if a Mix on a Cascade is
@@ -268,7 +268,7 @@ This topology comprises a set of layers. On each layer, we can have a fixed
 number of mixes. Every Mix that belongs to layer $l$ is bonded to every node
 that belongs to layers $l-1$ and $l+1$[8]. Variations of this topology are (a)
 fully connected nodes as described above and (b) semi-connected nodes where each
-node in layer l communicates with only a set of nodes on layers $l-1$ and
+node in layer $l$ communicates with only a set of nodes on layers $l-1$ and
 $l+1$[7]. Stratified topology is flexible regarding scalability and latency
 because we can handle more traffic by adding more mixes in each layer. Also,
 having many mixes in each layer makes the network crash and fault tolerant.
@@ -276,7 +276,7 @@ However, we must note that if a stratified topology gets too large and the
 traffic for some reason is reduced, anonymity is also reduced. This occurs
 because messages split to more nodes, and therefore we have less mixing. We can
 overcome this issue by generating decoy traffic, but we must recognise that an
-extra computational cost is accompanied too. Figure .... illustrates a fully
+extra computational cost is accompanied too. Figure \ref{fig:stratified} illustrates a fully
 connected stratified topology.
 
 \subsection{Mesh}
@@ -284,7 +284,7 @@ In this topology, Mixes are loosely arranged. Specifically, there is a link
 between every Mix in the network. A mixing route can start and finish at any
 node. Nevertheless, the muddled paths, a message can take on this topology, make
 it hard for researchers to measure anonymity. Hence, it is not widely realised
-and used. Figure 1.d depicts a mesh topology.
+and used. Figure \ref{fig:mesh} depicts a mesh topology.
 
 \begin{figure}[h!]
     \centering
@@ -324,27 +324,28 @@ and used. Figure 1.d depicts a mesh topology.
 \subsection{Time-Based}
 The time-based mixing technique aims to collect incoming messages and permute
 and forward them every t seconds, where t is a system-defined variable. Figure
-... illustrates how time-based Mixes work. The advantage of this mixing
-technique is the control of the message transfer delay. Nonetheless, on the
-downside, we do not know and govern how many messages we mix. This is because a
-different number of messages may be received in separate rounds. As a result,
-the number of messages shuffled each time is not the same; therefore, the
-anonymity set can sometimes be either large or smaller. A small set of messages
-infers reduced anonymity. To keep anonymity above a baseline, we must
+\ref{fig:timed-mix} illustrates how time-based Mixes work. The advantage of this
+mixing technique is the control of the message transfer delay. Nonetheless, on
+the downside, we do not know and govern how many messages we mix. This is
+because a different number of messages may be received in separate rounds. As a
+result, the number of messages shuffled each time is not the same; therefore,
+the anonymity set can sometimes be either large or smaller. A small set of
+messages infers reduced anonymity. To keep anonymity above a baseline, we must
 incorporate complementary cover traffic, which comes with an extra computational
 expense.
 
 \subsection{Threshold-Based}
 Similar to time-based mixes, a threshold Mix buffers messages into a queue until
 a predefined threshold is reached. Then, we shuffle and forward messages to the
-next hop[]. In contrast with timed Mixes, threshold Mixes allow us to control
-the anonymity set of messages being processed. Nonetheless, this technique has
-some disadvantages as well. Primarily, the problem arises when the network does
-not have much traffic, and the receiving buffer does not reach its limit
-shortly. As a result, message delivery will be delayed significantly, which is
-not ideal for the user's experience. The solution to this pitfall is to
-integrate cover traffic in order to fill a Mix with messages more frequently. As
-mentioned earlier, this comes with a computational overhead. 
+next hop[]. We observe a threshold Mix in Figure \ref{fig:threshold-mix}. In
+contrast with timed Mixes, threshold Mixes allow us to control the anonymity set
+of messages being processed. Nonetheless, this technique has some disadvantages
+as well. Primarily, the problem arises when the network does not have much
+traffic, and the receiving buffer does not reach its limit shortly. As a result,
+message delivery will be delayed significantly, which is not ideal for the
+user's experience. The solution to this pitfall is to integrate cover traffic in
+order to fill a Mix with messages more frequently. As mentioned earlier, this
+comes with a computational overhead. 
 
 
 \subsection{Pool-Mix}
@@ -358,14 +359,16 @@ time, one could assume this feature is a bug. In other words, a message can
 stack in the pool for quite some time before arriving at its destination. We
 observe that this fact yields unexpected delays. Besides that, a pool Mix
 requires many messages to work optimally. Therefore, this solution might need to
-include cover traffic to increase the network's capacity.
+include cover traffic to increase the network's capacity. Figure
+\ref{fig:pool-mix} illustrates a Pool Mix.
 
 \subsection{Continues}
 This mixing technique depends on a delay given by the message sender[26]. The
 main advantage of this approach is that messages are not shuffled together, and
 therefore, there is no statistical inference. As described in the literature, it
 has a memory-less property[]. Each message is treated individually, and the
-dispatch timestamp is not affected by the arrival of any other message.
+dispatch timestamp is not affected by the arrival of any other message. Figure
+\ref{fig:continues-mix} illustrates a Continues Mix.
 
 \begin{figure}[h!]
     \centering
@@ -373,28 +376,28 @@ dispatch timestamp is not affected by the arrival of any other message.
         \centering
         \includegraphics[width=\textwidth]{figures/mixing_techniques/timed.png}
         \caption{Timed Mix}
-        \label{fig:Timed Mix}
+        \label{fig:timed-mix}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/mixing_techniques/threshold.png}
         \caption{Threshold Mix}
-        \label{fig:Threshold Mix}
+        \label{fig:threshold-mix}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/mixing_techniques/pool.png}
         \caption{Pool Mix}
-        \label{fig:Pool Mix}
+        \label{fig:pool-mix}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/mixing_techniques/continues.png}
         \caption{Continues Mix}
-        \label{fig:Continues Mix}
+        \label{fig:continues-mix}
     \end{subfigure}
        \caption{Mixnets Mixing Techniques}
        \label{fig:mixnets-mixing-techniques}
@@ -404,16 +407,16 @@ dispatch timestamp is not affected by the arrival of any other message.
 
 As many scientists stated in the past, "Entropy is the natural order of the
 universe", meaning natural chaos. One way to measure anonymity in Mixnets is
-entropy. In other words, we try to measure the chaos between message
+entropy. In other words, we try to measure the chaos among message
 transmissions. Hence, we use the Shannon entropy formula (the result is in bits)
-to achieve the desired results. Equation (2.1) describes that formula. High
-entropy values imply better anonymity than lower values. There is no way of
-identifying acceptable entropy levels since this depends on the network size and
-adversary capabilities. In the following formula, we denote as $p(x)$ the
-probability that an attacker can assign to a user being the message sender. For
-instance, if we have an anonymity set of 1000 indistinguishable messages within
-a Mix buffer, we have 9.96 bits of entropy. ($Entropy = -\sum_{i =
-1}^{1000}p(\frac{1}{1000}) \log_2p(\frac{1}{1000}) = 9.96 bits$). 
+to achieve the desired results. Equation \ref{eq:entropy} describes that
+formula. High entropy values imply better anonymity than lower values. There is
+no way of identifying acceptable entropy levels since this depends on the
+network size and adversary capabilities. In the following formula, we denote as
+$p(x)$ the probability that an attacker can assign to a user being the message
+sender. For instance, if we have an anonymity set of 1000 indistinguishable
+messages within a Mix buffer, we have 9.96 bits of entropy. ($Entropy = -\sum_{i
+= 1}^{1000}p(\frac{1}{1000}) \log_2p(\frac{1}{1000}) = 9.96 bits$). 
 
 \begin{equation}
     \label{eq:entropy}
@@ -439,7 +442,7 @@ infrastructure with different layouts.
 
 The developed software realises many features that capture real-world use cases
 of Mix Networks, but it is not limited to it. Even though the simulator can
-handle peer-to-peer (p2p) network simulations, we are not interested in such
+handle peer-to-peer (P2P) network simulations, we are not interested in such
 network formations within the context of this project. Next, we will look deeper
 into the Simulator's intrinsics, reporting on its core functionality, available
 features and input parameters. Additionally, we will run the simulator against a
@@ -457,11 +460,11 @@ incomplete, and consequently, all messages are of one packet size.
 
 Furthermore, this simulator allows users to run experiments given many options.
 Specifically, there is support for many topologies, such as (a) Cascade, (b)
-Multi-Cascade, (c) Stratified and (d) P2P. Besides, there is an option for two
+Multi-Cascade, (c) Stratified and (d) P2P. In addition, there is an option for two
 mixing techniques (a) batch and reorder - threshold - and (b) poisson mixing
 -continues. The current implementation has default-enabled cover traffic
 generation for both clients and Mixes. Finally, the Simulator outputs the
-anonymity metrics of (a) entropy and (b) unlinkability.
+anonymity metrics of entropy and unlinkability.
 
 \subsection{Execution Workflow}
 
@@ -513,8 +516,7 @@ purpose. These arguments are \texttt{-test}, \texttt{-datadir}, \texttt{-hour},
 \texttt{-12hour}, \texttt{-minute}, \texttt{-day}.
 
 Moving to the configuration file, we can observe nine sections describing
-different simulation aspects. We present a sample configuration file in Figure
-...
+different simulation aspects. We present a sample configuration file in Appendix
 
 \textbf{Section 1} - \emph{Experiment Id}: In this section, we provide a simple
 label to help keep different simulations in order.
@@ -522,7 +524,7 @@ label to help keep different simulations in order.
 \textbf{Section 2} - \emph{Logging}: This section allows us to enable or disable
 logging. The attribute \texttt{dir} extends the logging directory path specified
 in the command-line arguments. The attributes \texttt{client\_log} and
-\texttt{mix\_log} shown in the configurations sample are never used throughout
+\texttt{mix\_log} shown in the configuration sample are never used throughout
 the simulation.
 
 \textbf{Section 3} - \emph{Simulation Phases}:  This section is related to
@@ -567,37 +569,40 @@ and the network's entropy. We run the same experiment for the three established
 topologies - Cascade(10 Mixes), Multi-Cascade (3x10 Mixes) and Stratified (3x10
 Mixes) - while increasing the simulation duration from 100 to 10000 time ticks.
 We also configured the mixing technique to Poisson (i.e. Continues), the number
-of clients to 100, and the number of target\_send\_messages to 1000. 
+of clients to 100, and set the number of real messages under transfer to 1000. 
 
 Our anticipation regarding memory usage assumes all experiments will deliver the
 same results for all topologies except Cascade. We establish our assumption on
 the fact that a single Cascade topology has fewer Mixes than the other
-topologies described earlier. However, according to Figure..., our hypothesis
-fails since the Simulator uses the same amount of memory - roughly 247 megabytes
-- in all experiments. In a later chapter, we will point out that memory usage solely
-depends on the number of users we are simulating.
+topologies described earlier. However, according to Figure
+\ref{fig:baseline-mem}, our hypothesis fails since the Simulator uses the same
+amount of memory - roughly 247 megabytes - in all experiments. In a later
+chapter, we will point out that memory usage solely depends on the number of
+users we are simulating.
 
 In regards to space complexity, we expect to have differences among topologies.
-Specifically, a Cascade Mixnet needs to route traffic through a chain of
-nodes. The network's capacity aligns with a single mix's capacity. Therefore,
-every time we dump each Mix's logs, we observe log lines to repeat because
-messages stall there for a long time. A Multi-Cascade Mixnet performs better
-since there are parallel chains of Mixes. The Stratified topology should be the
-best since messages continually move from one Mix to another and do not repeat
-in the log files. Indeed, our hypothesis is accurate, and we can
-notice the results in Figure ...
+Specifically, a Cascade Mixnet needs to route traffic through a chain of nodes.
+The network's capacity aligns with a single mix's capacity. Therefore, every
+time we dump each Mix's logs, we observe log lines to repeat because messages
+stall there for a long time. A Multi-Cascade Mixnet performs better since there
+are parallel chains of Mixes. The Stratified topology should be the best since
+messages continually move from one Mix to another and do not repeat in the log
+files. Indeed, our hypothesis is accurate, and we can notice the results in
+Figure \ref{fig:baseline-space}
 
 Execution time should follow the same pattern as space complexity, given the
 same reason concerning the nature of each topology, as noted previously. We
-observe in Figure ... that this is mostly true, except for the Simulation
-duration of 1000 time ticks. This negligible time offset, on Figure ..., could
-be caused by other processes running on our workstation at that moment.
+observe in Figure \ref{fig:baseline-time} that this is mostly true, except for
+the Simulation duration of 1000 time ticks. This negligible time offset, on
+Figure \ref{fig:baseline-time}, could be caused by other processes running on
+our workstation at that moment.
 
 Further, we need to check if Piotrowska's simulator reasonably captures the
 notion of entropy for each topology. According to our measurements in Figure
-..., Simulator reports higher entropy for Cascade topology. There follows Multi
-Cascade and Stratified. These results are acceptable since aggregating more
-messages on each hop increases Mix's anonymity set, so entropy is higher.
+\ref{fig:baseline-entropy} Simulator reports higher entropy for Cascade
+topology. There follows Multi Cascade and Stratified. These results are
+acceptable since aggregating more messages on each hop increases Mix's anonymity
+set, so entropy is higher.
 
 \begin{figure}[h!]
     \centering
@@ -635,15 +640,15 @@ messages on each hop increases Mix's anonymity set, so entropy is higher.
 
 Finally, we run Piotrowska's project using a \emph{cProfiler}[] to get visual
 information and statistics about its execution tree (sequence of functions
-called). We get a detailed representation of the execution tree in Figure. We
+called). We get a detailed representation of the execution tree in Appendix. We
 also analyze the project using \emph{SonarQube} to get information about the
 quality of the code. In the first place, \emph{cProfiler} reveals that 59.75\%
 of the CPU usage was for processing packets, while the heaviest task running
-under the \emph{packet processing} branch was \emph{entropy update}. Entropy
-update took 38.76\% of the total CPU usage, indicating a possible bottleneck to
-the whole execution. Regarding \emph{SonarQube} results, we found out that 2.7\%
-of the code is duplicated, and there are 57 \emph{code smells}, 2 \emph{bugs}
-and 5 \emph{security issues} of no great importance.
+under the \emph{packet processing} branch was \emph{entropy\_update()}.
+\emph{entropy\_update()} took 38.76\% of the total CPU usage, indicating a
+possible bottleneck to the whole execution. Regarding \emph{SonarQube} results,
+we found out that 2.7\% of the code is duplicated, and there are 57 \emph{code
+smells}, 2 \emph{bugs} and 5 \emph{security issues} of no great importance.
 
 \section{MiXiM}
 
@@ -657,7 +662,7 @@ scenario, reporting on its outputs and execution statistics. This information
 will help us decide if MiXiM is a well-built and feature-proof tool that brings
 out the most.
 
-After we had analysed  MiXiM, we understood the code intrinsics and captured its
+After we analysed  MiXiM, we understood the code intrinsics and captured its
 approach when simulating a network. Likewise, Piotrowska's work is well-designed
 and abstracted into similar entities: (a)Simulation, (b) Network, (c) Mix Node -
 Poisson Mix, Pool, Timed Mix, Threshold Mix - (d) Client, (e) Relay -
@@ -666,12 +671,13 @@ abstraction of an attacker - and (f) Message.
 
 Moreover, the simulator allows users to run experiments given various
 configurations. In more detail, there is support for many topologies, such as
-(1) cascade, (2) multi-cascade, and (3) stratified. Additionally, there is an
-option for three mixing techniques (1) Timed mixing and (2) Poisson mixing and
-(3) Threshold Mixing. Besides that, the users can enable dummy traffic
-generation, giving a specific generation rate. Another outstanding feature is
-the introduction of corrupted mix nodes during the simulation. Finally, the
-Simulator outputs the anonymity metric of entropy.
+(a) Cascade, (b) Multi-Cascade, and (c) Ctratified. Additionally, there is an
+option for three mixing techniques (a) Timed mixing and (b) Poisson mixing, (c)
+Threshold Mixing and (c) stop-and-go mixing[] (i.e. Continues). Besides that,
+the users can enable dummy traffic generation, giving a specific generation
+rate. Another outstanding feature is the introduction of corrupted mix nodes
+during the simulation. Finally, the Simulator outputs the anonymity metric of
+entropy.
 
 \subsection{Execution Workflow}
 
@@ -700,10 +706,10 @@ observe a single configuration file with six different sections. We present a
 sample configuration file in Appendix .... Following, we provide a thorough
 description of the aforementioned file.
 
-\textbf{Section 1} - \emph{DEFAULT}: Under the DEFAULT section, we can
-see the number of clients sending and receiving messages in a network and a
-parameter called lambda\_c representing the rate of generating messages per
-time tick. 
+\textbf{Section 1} - \emph{DEFAULT}: Under the DEFAULT section, we recognise
+the number of clients sending and receiving messages in a network and a
+parameter called lambda\_c representing the rate of generating messages per time
+tick. 
 
 \textbf{Section 2} - \emph{TOPOLOGY}: In this section, we describe settings for
 all three supported topologies - Stratified, Cascade and Free Route. The
@@ -750,7 +756,7 @@ arrangements failed due to run-time errors. Simulating a Stratified topology for
 causes, so we decided to probe the software code-base to uncover potential
 issues.
 
-Indeed, skimming the source code, we managed to spot four bugs we present in the following list. 
+Indeed, skimming the source code, we managed to spot four bugs we present in the following list: 
 
 \begin{enumerate}
     \item The parsing section of the code accepts as valid topologies "cascade",
@@ -761,9 +767,9 @@ Indeed, skimming the source code, we managed to spot four bugs we present in the
     \item The variable n\_cascade, which describes the number of parallel
     Cascades in Network.py, is hard coded. Hence, the simulation is not assuming
     the user's configuration.
-    \item In file Simulation.py, a variable is declared as otherClient, while
-    the software developer used the name other\_client when initialising the
-    variable. Consequently, the initialisation is meaningless, and otherClient
+    \item In file Simulation.py, a variable is declared as \emph{otherClient}, while
+    the software developer used the name \emph{other\_client} when initialising the
+    variable. Consequently, the initialisation is meaningless, and \emph{otherClient}
     has no value.
     \item The initial parsing of boolean parameters from the configuration file
     is incorrect since the code used is a Python2 command which, when using
@@ -772,19 +778,20 @@ Indeed, skimming the source code, we managed to spot four bugs we present in the
     matter their actual value.
 \end{enumerate}
 
-The purpose of this project is not to fix someone else's work but assess
+The purpose of this project is not to fix someone else's work but to assess
 it. Consequently, we did not proceed with further code reviews or repairs.
 
-In regards to the successful experiments, we can observe the results in Figure.
-Surprisingly, the execution time and space used to dump log files increase
-linearly for different simulation time-frames. According to our previous code
-analysis, this is justifiable since clients in MiXiM generate messages based on
-predefined $\lambda$ rate. The longer the simulation, the more messages are generated. Hence,
-more processing time and storage space are required.
+In regards to the successful experiments, we can observe the results in Figure
+\ref{fig:baseline-mixim-simulation}. Surprisingly, the execution time and space
+used to dump log files increase linearly for different simulation time-frames.
+According to our previous code analysis, this is justifiable since clients in
+MiXiM generate messages based on predefined $\lambda$ rate. The longer the
+simulation, the more messages are generated. Hence, more processing time and
+storage space are required.
 
 On the other hand, Simulator uses only the number of specified target messages
 regardless of the duration. Furthermore, it is notable that in terms of memory
-usage, MiXiM is sufficient, requiring only 21.4 megabytes of RAM for all our
+usage, MiXiM is sufficient, requiring only 21.4 MB of RAM for all our
 successful trials. Lastly, we cannot deduce further valuable insights from these
 graphs because, as we mentioned earlier, we failed to perform all baseline
 experiments.
@@ -826,10 +833,10 @@ experiments.
 
 \section{Compasisson Framework}
 
-To bring conclusiveness to our simulator analysis, we present in this section a
+To bring conclusiveness to our simulators analysis, we present in this section a
 comparison framework. Our ultimate goal is to find out which simulator is better
 to adopt for further development in the future. A comprehensive comparison
-framework needs to evaluate multiple factors. Therefore we assumed the following
+framework needs to evaluate multiple factors. Therefore, we assumed the following
 KPIs (key performance indicators) (a) Topologies, (b) Mixing Techniques, (c)
 Routing Methods for Stratified topology, (d) Cover Traffic, (e) Corrupt Relays,
 and (f) SonarQube Code analysis insights.
@@ -867,22 +874,22 @@ and (f) SonarQube Code analysis insights.
     \label{tab:comparisson-table}
     \end{table}
 
-Table ... illustrates how MiXiM and Simulator compare in each aspect. We notice
-that MiXiM realises 13 features, while Simulator has only 9. Nonetheless, it is
-essential to prompt that most of MiXiM's features do not work, crashing on
+Table ... illustrates how MiXiM and Simulator are compared in each aspect. We
+notice that MiXiM realises 13 features, while Simulator has only 9. Nonetheless,
+it is essential to prompt that most of MiXiM's features do not work, crashing on
 runtime. Also, both software achieve high scores in object abstraction, while
-code readability for MiXiM seems to be poor. Further, MiXiM has 81 code smells
-compared to Simulator, which  has only 57 code smells. Moreover, MiXiM has
-double the bugs and security issues compared to Simulator, which has 2 and 5,
-respectively. Eventually, both projects have negligible amounts of code
-duplication.
+code readability for MiXiM seems to be poor. Further, MiXiM has 81 \emph{code
+smells} compared to Simulator, which  has only 57 \emph{code smells}. Moreover,
+MiXiM has double the \emph{bugs} and \emph{security issues} compared to
+Simulator, which has 2 and 5, respectively. Eventually, both projects have
+negligible amounts of \emph{code duplication}.
 
 Ultimately, we decided that the best simulator, so far, is Piotrowska's
 Simulator. We justify our decision mainly based on the usability aspect. Even
 though MiXiM advertises a large set of features, it fails to deliver a working
 code-base. We are confident that Simulator is a well-designed software and can
 be improved by supporting a complete set of features, in the future. Besides,
-Simulator satisfied our reasoning for valid and quality entropy and network
+Simulator justified our reasoning for valid and quality entropy and network
 latency results. 
 
 \chapter{Replication Study}
@@ -958,30 +965,31 @@ base.
  \end{figure}
 
 
- Indeed, Figures ... and ... portray the expected results. Assuming Cascades of
- length three and by increasing the number of users, we observe an increase in
- entropy as well. Also, we remark that the entropy's increase rate is much more
- extensive for a Single-Cascade (1x3) than for a Multi-Cascade(2x3) topology.
- Nonetheless, there is evidence of poor latency in Figure 1a when the system
- facilitates more than 2000 users. Latency sharply increases from just above 1
- second to almost 350 seconds. On the other hand, a Multi-Cascade design allows
- very low latency by sacrificing a bit of anonymity. From the above analysis, we
- can deduce that for Cascade and Multi-Cascade topologies, we have to choose
- between scalability and anonymity. We can not have both.
+ Indeed, Figure \ref{fig:elixxir} portray the expected results. Assuming
+ Cascades of length three and by increasing the number of users, we observe an
+ increase in entropy as well. Also, we remark that the entropy's increase rate
+ is much more extensive for a Single-Cascade (1x3) than for a Multi-Cascade(2x3)
+ topology. Nonetheless, there is evidence of poor latency in Figure
+ \ref{fig:elixxir-cascade} when the system facilitates more than 2000 users.
+ Latency sharply increases from just above 1 second to almost 350 seconds. On
+ the other hand, a Multi-Cascade design allows very low latency by sacrificing a
+ bit of anonymity. From the above analysis, we can deduce that for Cascade and
+ Multi-Cascade topologies, we have to choose between scalability and anonymity.
+ We can not have both.
 
  In contrast to Cascade topologies, a Stratified topology should scale better.
  This is intuitive since we can add more Mixes to each layer, distributing
  traffic into distinct routes. At the same time, we deem it is possible to
  achieve lower latency since not many messages get congested into a Mix. 
 
- As we notice in Figure ..., Nym's Stratified implementation - 3 layers
- of 3 Mixes each - can achieve greater anonymity with very low latency. We
- presume that latency is at the level of 0.3 seconds because Nym realises a
- continuous mixing technique, while earlier, Elixxir used a batch and reorder
- technique, meaning that batch size can affect latency. Moreover, entropy is in
- an uptrend, showing that by increasing the number of users, anonymity increases
- as well. Therefore, Nym's Stratified configuration can handle significant
- traffic with increasing anonymity and low latency.
+ As we notice in Figure \ref{fig:nym-stratified}, Nym's Stratified
+ implementation - 3 layers of 3 Mixes each - can achieve greater anonymity with
+ very low latency. We presume that latency is at the level of 0.3 seconds
+ because Nym realises a continuous mixing technique, while earlier, Elixxir used
+ a batch and reorder technique, meaning that batch size can affect latency.
+ Moreover, entropy is in an uptrend, showing that by increasing the number of
+ users, anonymity increases as well. Therefore, Nym's Stratified configuration
+ can handle significant traffic with increasing anonymity and low latency.
 
 \begin{figure}[h!]
     \centering
@@ -990,13 +998,13 @@ base.
     \label{fig:nym-stratified}
  \end{figure}
 
- Using MiXiM, we get similar results. In particular, Figure ... depicts the
+ Using MiXiM, we get similar results. In particular, Figure \ref{fig:mixim-different-generation} depicts the
  anonymity of a Stratified topology of 3 layers comprising 10 Mixes each,
  simulated by setting the $\lambda$ message generation factor to 1 and 10,
  respectively. We observe that entropy increases when traffic rises, conforming
  to the previous experiment's results.
 
- Also, Figure .... shows us the impact on entropy when increasing the number of
+ Also, Figure \ref{fig:mixim-different-layers} shows us the impact on entropy when increasing the number of
  layers, assuming different average delays on mixing - presuming Continuous
  mixing. We observe anonymity growing between 1 and 2 layers; however, there is
  a steady decline afterwards. We are not sure why this happens.
@@ -1012,8 +1020,8 @@ base.
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/mixim/2.png}
-        \caption{Impact of different topologies on Entropy}
-        \label{fig:mixim-different-topologies}
+        \caption{Impact of different messages generation rates on entropy}
+        \label{fig:mixim-different-generation}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
@@ -1035,12 +1043,13 @@ keeping the average delay low - assuming the continuous mixing technique.
 
 \subsection{Cover Traffic}
 
-Figure ... illustrates the effect of cover traffic on anonymity, assuming
-different cover traffic ratios. We observe that for higher ratios, anonymity is
-greater. Also, increasing the number of users contributes to anonymity. Notably,
-in Figure ... we notice that decreasing the cover traffic ratio from 10:1,  to
-2:1 [Cover:Real] yields acceptable levels of entropy, which is further boosted
-by the increasing number of users. 
+Figure \ref{fig:cover-traffic-ratios} illustrates the effect of cover traffic on
+anonymity, assuming different cover traffic ratios. We observe that for higher
+ratios, anonymity is greater. Also, increasing the number of users contributes
+to anonymity. Notably, in Figure \ref{fig:cover-traffic-decreasing-ratios} we
+notice that decreasing the cover traffic ratio from 10:1,  to 2:1 [Cover:Real]
+yields acceptable levels of entropy, which is further boosted by the increasing
+number of users. 
 
 
 \begin{figure}[h!]
@@ -1066,10 +1075,10 @@ Real traffic is generated according to the number of users in our network.
 Therefore, more users imply higher anonymity levels. In fact, as noted by
 [simulator] and [mixim], increasing the average delay of Continues mixing offers
 greater anonymity. Nevertheless, what if we want to keep latency down? As we
-notice in Figure ... this can be achieved by keeping the average delay down. As
-more and more users join a Stratified network, the anonymity increases; thus, we
-can employ low mixing delays. As a result, we have a network with low latency
-yet constant anonymity.
+notice in Figure \ref{fig:nym-stratified-low-latency-constant-anonymity} this
+can be achieved by keeping the average delay down. As more and more users join a
+Stratified network, the anonymity increases; thus, we can employ low mixing
+delays. As a result, we have a network with low latency yet constant anonymity.
 
 \begin{figure}[h!]
     \centering
@@ -1085,11 +1094,12 @@ corrupted Mixes within a Stratified network. The notion of a corrupt node
 implies that the adversary knows all input and output messages on a Mix with
 complete certainty. 
 
-The results illustrated in Figure ... refer to a Stratified network of 3 layers
-comprising ten mixes each. The mixing technique used is Continues, with an
-average delay of 0.1 seconds. Also, we facilitate 100 clients, each generating
-ten messages per second. For this experimental set-up, we anticipate declining
-anonymity by increasing the percentage of corrupted mixes. 
+The results illustrated in Figure \ref{fig:corrupted-mixes} refer to a
+Stratified network of 3 layers comprising ten mixes each. The mixing technique
+used is Continues, with an average delay of 0.1 seconds. Also, we facilitate 100
+clients, each generating ten messages per second. For this experimental set-up,
+we anticipate declining anonymity by increasing the percentage of corrupted
+mixes. 
 
 \begin{figure}[h!]
     \centering
@@ -1098,26 +1108,28 @@ anonymity by increasing the percentage of corrupted mixes.
     \label{fig:corrupted-mixes}
  \end{figure}
 
-Indeed, Figure .... depicts rigid results. There is a steady decrease in
-anonymity each time we increase the fraction of corrupt nodes. Moreover, it is
-interesting to observe that for 0\% and 10\% of corruption, the three-layer scheme
-provides better anonymity, while this is not true for 20\%, 30\% and 40\% of
-corruption. Instead, we notice that the higher the corruption fraction, the
-lower the entropy is for the three-layer and four-layer Stratified Mixnet. In
-contrast, the entropy of a five-layer design seems to perform better.
-Intuitively, this is reasonable because a network with more layers provides the
-possibility of having less interference by an adversary. On the other hand, a
-network with fewer layers but more adversarial mixes implies a greater
-possibility of maliciously influencing the communication between mixes.
+Indeed, Figure \ref{fig:corrupted-mixes} depicts rigid results. There is a
+steady decrease in anonymity each time we increase the fraction of corrupt
+nodes. Moreover, it is interesting to observe that for 0\% and 10\% of
+corruption, the three-layer scheme provides better anonymity, while this is not
+true for 20\%, 30\% and 40\% of corruption. Instead, we notice that the higher
+the corruption fraction, the lower the entropy is for the three-layer and
+four-layer Stratified Mixnet. In contrast, the entropy of a five-layer design
+seems to perform better. Intuitively, this is reasonable because a network with
+more layers provides the possibility of having less interference by an
+adversary. On the other hand, a network with fewer layers but more adversarial
+mixes implies a greater possibility of maliciously influencing the communication
+between mixes.
 
 Ultimately, considering the effect of the number of layers on the network's
-anonymity according to [mixim], and the results of our experiment in Figure ...,
-we deduce that it is challenging to design a Mixnet. In the first place, we
-observe that increasing the number of layers does not much contribute to the
-anonymity while introducing corrupt relays appears to make more extensive
-networks necessary. Nevertheless, augmenting a Mixnet implies computational and
-hardware expenses. It is beyond question that there are some apparent tradeoffs
-between anonymity and scalability when adversaries emerge.
+anonymity according to [mixim], and the results of our experiment in Figure
+\ref{fig:corrupted-mixes}, we deduce that it is challenging to design a Mixnet.
+In the first place, we observe that increasing the number of layers does not
+much contribute to the anonymity while introducing corrupt relays appears to
+make more extensive networks necessary. Nevertheless, augmenting a Mixnet
+implies computational and hardware expenses. It is beyond question that there
+are some apparent tradeoffs between anonymity and scalability when adversaries
+emerge.
 
 \chapter{Exteding Current Research Using Simulator}
 Chapter 5 discusses our main contribution to the Mixnets field, which is the
@@ -1153,14 +1165,15 @@ network's entropy should fluctuate in a tight range.
     \label{fig:stratified-incresing-number-of-mixes}
 \end{figure}    
 
-Indeed, observing Figure ..., we deduce that entropy is initially different, but
-as we increase the network's user base, it converges. Potentially, we can
-declare that the three interpolations are logarithmic-like for a low number of
-users. Nonetheless, we are not sure if entropy diverges for a more extensive
-user base. Also, we notice that netowrks with more Mixes in each layer have
-lower entropy for 10 to 400 users. This is reasonable because, as mentioned
-earlier, less traffic is routed through mixes. Regarding the increased number of
-users, it is evident that larger user bases yield better anonymity overall.
+Indeed, observing Figure \ref{fig:stratified-incresing-number-of-mixes} we
+deduce that entropy is initially different, but as we increase the network's
+user base, it converges. Potentially, we can declare that the three
+interpolations are logarithmic-like for a low number of users. Nonetheless, we
+are not sure if entropy diverges for a more extensive user base. Also, we notice
+that netowrks with more Mixes in each layer have lower entropy for 10 to 400
+users. This is reasonable because, as mentioned earlier, less traffic is routed
+through mixes. Regarding the increased number of users, it is evident that
+larger user bases yield better anonymity overall.
 
 
 \section{Dynamically Imbalanced Stratified Network}
@@ -1184,30 +1197,31 @@ probability of failure for each Mix individually.
 Our initial theory considered that increasing the failure probability would
 decrease anonymity because a considerable amount of Mixes receive less traffic.
 This hypothesis is invalidated since anonymity seems to remain persistent for
-different failure probabilities. According to Figure ..., for a 20\% crash
-probability, we get slightly higher entropy, assuming 100 clients in the
-network. Nonetheless, once we scale up the user base and crash probabilities,
-the anonymity ranges in equivalent levels. Besides that, our initial assumption
-for higher latency is false since, as we notice in Figure ..., latency remains
-constant. 
+different failure probabilities. According to Figure
+\ref{fig:dynamic-crash-probability}, for a 20\% crash probability, we get
+slightly higher entropy, assuming 100 clients in the network. Nonetheless, once
+we scale up the user base and crash probabilities, the anonymity ranges in
+equivalent levels. Besides that, our initial assumption for higher latency is
+false since, as we notice in Figure \ref{fig:dynamic-crash-probability}, latency
+remains constant. 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[height=8cm]{figures/simulator_extentions/mix_failure.png}
-    \caption{need to add caption}
+    \caption{Effect of Different the Crash Probabilities on Entropy}
     \label{fig:dynamic-crash-probability}
 \end{figure}    
 
 
-The results illustrated in the above Figure are reasonable and justified through
-the simulation logs. In more detail, skimming the log files, we revealed that
-invalid paths occur sporadically; hence the increased latency of a few messages
-does not affect the average network latency. Moreover, anonymity is not affected
-because entropy fluctuations seem to cancel out each other after simulating many
-messages for many users. In other words, a route of Mixes might not appear many
-times in the short term, but after sampling routes for 1000 messages, all
-possible paths seem to be selected an equal number of times. Therefore,
-anonymity converges to a single value.
+The results illustrated in the above Figure \ref{fig:dynamic-crash-probability}
+are reasonable and justified through the simulation logs. In more detail,
+skimming the log files, we revealed that invalid paths occur sporadically; hence
+the increased latency of a few messages does not affect the average network
+latency. Moreover, anonymity is not affected because entropy fluctuations seem
+to cancel out each other after simulating many messages for many users. In other
+words, a route of Mixes might not appear many times in the short term, but after
+sampling routes for 1000 messages, all possible paths seem to be selected an
+equal number of times. Therefore, anonymity converges to a single value.
 
 \section{Statically Imbalanced Stratified Network}
 
@@ -1239,9 +1253,9 @@ respectively.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[height=8cm]{figures/simulator_extentions/first_layer_variable.png}
+    \includegraphics[height=8cm]{figures/simulator_extentions/last_layer_variable.png}
     \caption{need to add caption}
-    \label{fig:first-layer-variable}
+    \label{fig:last-layer-variable}
 \end{figure} 
 
 \begin{figure}[h!]
@@ -1251,15 +1265,17 @@ respectively.
     \label{fig:middle-layer-variable}
 \end{figure} 
 
-According to our analysis in Figures ..., increasing the number of layers
-regardless of the layer position impacts anonymity likewise. This is caused
-because all mixes repeat the same process in all layers and traffic flows
-continuously from senders to Mixes and from Mixes to recipients. Nonetheless,
-something different occurs assuming a smaller user base. Notably, a 3 Mix per
-layer configuration yields slightly higher entropy compared to 2 Mix layers.
-Likewise, a 2 Mix per layer network has narrowly taller entropy than a 1 Mix per
-layer design. The results of this Figure are credible since, by definition,
-routing more traffic into a Mix results in better anonymity.
+According to our analysis in Figures \ref{fig:first-layer-variable},
+\ref{fig:last-layer-variable}, and \ref{fig:middle-layer-variable},  increasing
+the number of layers regardless of the layer position impacts anonymity
+likewise. This is caused because all mixes repeat the same process in all layers
+and traffic flows continuously from senders to Mixes and from Mixes to
+recipients. Nonetheless, something different occurs assuming a smaller user
+base. Notably, a three Mix per layer configuration yields slightly higher entropy
+compared to two Mix layers. Likewise, a two Mix per layer network has narrowly
+taller entropy than a one Mix per layer design. The results of this Figure are
+credible since, by definition, routing more traffic into a Mix results in better
+anonymity.
 
 Finally, we observe latency at a constant level of 0.3. The exact value was
 reported in the previous section of chapter 5, where we simulated a dynamically

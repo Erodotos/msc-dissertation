@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Execution Workflow}{15}%
 \contentsline {subsection}{\numberline {3.2.2}Input Parameters and Configuration File}{16}%
 \contentsline {subsection}{\numberline {3.2.3}Baseline Simulation and Profiling Measurements}{17}%
-\contentsline {section}{\numberline {3.3}Compasisson Framework}{19}%
+\contentsline {section}{\numberline {3.3}Compasisson Framework}{18}%
 \contentsline {chapter}{\numberline {4}Replication Study}{21}%
 \contentsline {section}{\numberline {4.1}Studying the Effect of Mix Network Topologies and Mixing Techniques}{22}%
 \contentsline {section}{\numberline {4.2}Studying the Effect of Traffic}{24}%
