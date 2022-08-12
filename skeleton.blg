@@ -2,47 +2,64 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: skeleton.aux
 The style file: plain.bst
-I found no \citation commands---while reading file skeleton.aux
 Database file #1: mybibfile.bib
-You've used 0 entries,
+Warning--entry type for "KatzMixnet" isn't style-file defined
+--line 350 of file mybibfile.bib
+Warning--to sort, need author or key in nsa
+Warning--to sort, need author or key in cia
+Warning--to sort, need author or key in remailers
+Warning--to sort, need author or key in mixmaster
+Warning--to sort, need author or key in xx-netowrk-app
+Warning--to sort, need author or key in xx-netowrk
+Warning--to sort, need author or key in hopr
+Warning--to sort, need author or key in simulator
+Warning--to sort, need author or key in mixim
+Warning--to sort, need author or key in entropy
+Warning--to sort, need author or key in nym-tech
+Warning--to sort, need author or key in simpy
+Warning--to sort, need author or key in cProfile
+Warning--to sort, need author or key in memprofiler
+Warning--to sort, need author or key in sonarqube
+Warning--empty journal in erodotos
+You've used 36 entries,
             2118 wiz_defined-function locations,
-            497 strings with 3998 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            654 strings with 8611 characters,
+and the built_in function-call counts, 10574 in all, are:
+= -- 1070
+> -- 352
+< -- 13
++ -- 151
+- -- 112
+* -- 557
+:= -- 1522
+add.period$ -- 115
+call.type$ -- 36
+change.case$ -- 161
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 52
+duplicate$ -- 463
+empty$ -- 1013
+format.name$ -- 112
+if$ -- 2425
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 36
+missing$ -- 22
+newline$ -- 181
+num.names$ -- 42
+pop$ -- 325
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 128
 quote$ -- 0
-skip$ -- 1
+skip$ -- 344
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 543
+swap$ -- 144
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+type$ -- 138
+warning$ -- 16
+while$ -- 82
+width$ -- 38
+write$ -- 367
+(There were 17 warnings)

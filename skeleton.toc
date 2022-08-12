@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Time-Based}{7}%
 \contentsline {subsection}{\numberline {2.3.2}Threshold-Based}{8}%
 \contentsline {subsection}{\numberline {2.3.3}Pool-Mix}{8}%
-\contentsline {subsection}{\numberline {2.3.4}Continues}{8}%
+\contentsline {subsection}{\numberline {2.3.4}Continous}{8}%
 \contentsline {section}{\numberline {2.4}Measuring Anonymity}{9}%
 \contentsline {chapter}{\numberline {3}A Deep Dive Into The Simulators}{10}%
 \contentsline {section}{\numberline {3.1}Simulator}{10}%
@@ -25,7 +25,7 @@
 \contentsline {chapter}{\numberline {4}Replication Study}{21}%
 \contentsline {section}{\numberline {4.1}Studying the Effect of Mix Network Topologies and Mixing Techniques}{22}%
 \contentsline {section}{\numberline {4.2}Studying the Effect of Traffic}{24}%
-\contentsline {subsection}{\numberline {4.2.1}Cover Traffic}{24}%
+\contentsline {subsection}{\numberline {4.2.1}Cover Traffic}{25}%
 \contentsline {subsection}{\numberline {4.2.2}Real Traffic}{25}%
 \contentsline {section}{\numberline {4.3}Studying the Effect of Corrupt Relays}{25}%
 \contentsline {chapter}{\numberline {5}Exteding Current Research Using Simulator}{28}%
@@ -34,9 +34,9 @@
 \contentsline {section}{\numberline {5.3}Statically Imbalanced Stratified Network}{31}%
 \contentsline {chapter}{\numberline {6}Conclusion}{34}%
 \contentsline {chapter}{Bibliography}{37}%
-\contentsline {chapter}{\numberline {A}Sample Configuration Files}{38}%
-\contentsline {section}{\numberline {A.1}Simulator Configuration File}{38}%
-\contentsline {section}{\numberline {A.2}MiXiM Configuration File}{40}%
-\contentsline {chapter}{\numberline {B}cProfile Execution Trees}{42}%
-\contentsline {section}{\numberline {B.1}Simulator Execution Tree}{43}%
-\contentsline {section}{\numberline {B.2}MiXiM Execution Tree}{44}%
+\contentsline {chapter}{\numberline {A}Sample Configuration Files}{40}%
+\contentsline {section}{\numberline {A.1}Simulator Configuration File}{40}%
+\contentsline {section}{\numberline {A.2}MiXiM Configuration File}{42}%
+\contentsline {chapter}{\numberline {B}cProfile Execution Trees}{44}%
+\contentsline {section}{\numberline {B.1}Simulator Execution Tree}{45}%
+\contentsline {section}{\numberline {B.2}MiXiM Execution Tree}{46}%
