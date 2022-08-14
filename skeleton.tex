@@ -226,7 +226,7 @@ The conducted analysis suggests that the MiXiM\cite{mixim} simulator offers a
 plethora of features; however, the code seems to be buggy and not entirely
 functional. On the other hand, Simulator\cite{simulator} (Piotrowska's project
 has not an official name and is called "Simulator") has fewer features but works
-appropriately, has cleaner code, and therefore can be trusted for further
+appropriately, has cleaner code, and therefore, can be trusted for further
 development. Nonetheless, it is worth mentioning that Simulator is a high memory
 demand software. Remarkably, increasing the number of users in a simulation
 requires lots of memory. At the same time, the simulation runtime sharply
@@ -251,7 +251,7 @@ background knowledge, including Mixnets fundamentals and the anonymity metric
 used. Chapter 3 focuses on comparing the provided simulators, qualitatively and
 quantitatively. Chapter 4 covers the replication and comment of existing
 literature using both simulators. Chapter 5 presents our analysis and experiment
-conducted to bring conclusiveness to our research questions. Finally, chapter 6
+conducted to bring conclusiveness to our research questions. Finally, Chapter 6
 summarises the key points and lessons learned from this project and discusses
 future directions on this topic.
 
@@ -270,7 +270,7 @@ one end to another, hiding metadata. In more detail, metadata includes but is
 not limited to geographical location, message sender and receiver, transmission
 time and frequency, size of the message and the message sequence. Mixnets remove
 time and sequence-related correlation factors between a message sender and
-receiver as they route same-size messages through a chain of nodes called Mixes.
+receiver, as they route same-size messages through a chain of nodes called Mixes.
 Mixes can be arranged into specific formations called topologies, defining how
 they are interconnected. Whenever a Mix receives a message $m$, it is permuted
 within a set of other messages $M$\cite{erodotos}. The messages' permutation is
@@ -321,7 +321,7 @@ adding more mixes in each layer. Also, having many mixes in each layer makes the
 network crash and fault tolerant\cite{erodotos}. However, we must note that if a
 stratified topology gets too large and the traffic for some reason is reduced,
 anonymity is also reduced. This occurs because messages split to more nodes, and
-therefore we have less mixing. We can overcome this issue by generating decoy
+therefore, we have less mixing. We can overcome this issue by generating decoy
 traffic, but we must recognise that an extra computational cost is accompanied
 too. Figure \ref{fig:stratified} illustrates a fully connected stratified
 topology.
@@ -376,7 +376,7 @@ Mixes work. The advantage of this mixing technique is the control of the message
 transfer delay. Nonetheless, on the downside, we do not know and govern how many
 messages we mix. This is because a different number of messages may be received
 in separate rounds. As a result, the number of messages shuffled each time is
-not the same; therefore, the anonymity set can sometimes be either large or
+not the same; therefore, the anonymity set can sometimes be either larger or
 smaller. A small set of messages infers reduced anonymity. To keep anonymity
 above a baseline, we must incorporate complementary cover traffic, which comes
 with an extra computational expense.
@@ -491,7 +491,7 @@ different design configurations. Her study mainly used the Simulator to compare
 existing projects - Elixxir\cite{xx-netowrk}, HOPR\cite{hopr} and Nym\cite{nym-tech}
 - deployed on Mix Network infrastructure with different layouts.
 
-The developed software, uses is based on Simpy\cite{simpy}, and realises many
+The developed software, is based on Simpy\cite{simpy}, and realises many
 features that capture real-world use cases of Mix Networks, but it is not
 limited to it. Even though the simulator can handle peer-to-peer (P2P) network
 simulations, we are not interested in such network formations within the context
@@ -514,7 +514,7 @@ Furthermore, this simulator allows users to run experiments given many options.
 Specifically, there is support for many topologies, such as (a) Cascade, (b)
 Multi-Cascade, (c) Stratified and (d) P2P. In addition, there is an option for two
 mixing techniques (a) batch and reorder - threshold - and (b) poisson mixing
--Continous. The current implementation has default-enabled cover traffic
+- Continous. The current implementation has default-enabled cover traffic
 generation for both clients and Mixes. Finally, the Simulator outputs the
 anonymity metrics of entropy and unlinkability.
 
@@ -595,7 +595,7 @@ Cascade/Multi-Cascade topologies.
 \textbf{Section 6} - \emph{Messages}: This section defines the message size
 (feature not realised, all messages are of length one packet).
 
-\textbf{Section 7} - \emph{Mixing Configurations}: This section describes, Mixes'
+\textbf{Section 7} - \emph{Mixing Configurations}: This section describes Mixes'
 settings like the average delay before sending a packet (Continous mixing) and
 the batching of messages according to specific batch size (threshold mixing). 
     
@@ -607,8 +607,8 @@ to note that the attributes \texttt{rate\_ack}, \texttt{ACK},
 \texttt{retransmit}, \texttt{dummies\_acks}, and \texttt{max\_retransmissions}
 are never used. 
 
-\textbf{Section 9} - \emph{miscellaneous}: This section keeps information
-denoting the length of a message-id and the number of total real messages we
+\textbf{Section 9} - \emph{miscellaneous}: This section
+denotes the length of a message-id and the number of total real messages we
 want to send during the simulation.
 
 
@@ -630,7 +630,7 @@ topologies described earlier. However, according to Figure
 \ref{fig:baseline-mem}, our hypothesis fails since the Simulator uses the same
 amount of memory - roughly 247 megabytes - in all experiments. In a later
 chapter, we will point out that memory usage solely depends on the number of
-users we are simulating.
+users we simulate.
 
 In regards to space complexity, we expect to have differences among topologies.
 Specifically, a Cascade Mixnet needs to route traffic through a chain of nodes.
@@ -651,7 +651,7 @@ our workstation at that moment.
 
 Further, we need to check if Piotrowska's simulator reasonably captures the
 notion of entropy for each topology. According to our measurements in Figure
-\ref{fig:baseline-entropy} Simulator reports higher entropy for Cascade
+\ref{fig:baseline-entropy}, Simulator reports higher entropy for Cascade
 topology. There follows Multi Cascade and Stratified. These results are
 acceptable since aggregating more messages on each hop increases Mix's anonymity
 set, so entropy is higher.
@@ -717,7 +717,7 @@ well-built and feature-proof tool that brings out the most.
 
 After we analysed  MiXiM, we understood the code intrinsics and captured its
 approach when simulating a network. Likewise, Piotrowska's work is well-designed
-and abstracted into similar entities: (a)Simulation, (b) Network, (c) Mix Node -
+and abstracted into similar entities: (a) Simulation, (b) Network, (c) Mix Node -
 Poisson Mix, Pool, Timed Mix, Threshold Mix - (d) Client, (e) Relay -
 abstraction of an attacker - and (f) Message.
 
@@ -726,7 +726,7 @@ Moreover, the simulator allows users to run experiments given various
 configurations. In more detail, there is support for many topologies, such as
 (a) Cascade, (b) Multi-Cascade, and (c) Ctratified. Additionally, there is an
 option for three mixing techniques (a) Timed mixing and (b) Poisson mixing, (c)
-Threshold Mixing and (c) stop-and-go mixing\cite{kesdogan1998stop} (i.e.
+Threshold Mixing and (d) stop-and-go mixing\cite{kesdogan1998stop} (i.e.
 Continous). Besides that, the users can enable dummy traffic generation, giving
 a specific generation rate. Another outstanding feature is the introduction of
 corrupted mix nodes during the simulation. Finally, the Simulator outputs the
@@ -756,7 +756,7 @@ The workflow of executing a standard simulation scenario is as follows:
 
 MiXiM, compared to Simulator, does not take any command-line arguments. We only
 observe a single configuration file with six different sections. We present a
-sample configuration file in Appendix \ref{appendix:a2} Following, we provide a thorough
+sample configuration file in Appendix \ref{appendix:a2}. Following, we provide a thorough
 description of the aforementioned file.
 
 \textbf{Section 1} - \emph{DEFAULT}: Under the DEFAULT section, we recognise
@@ -767,39 +767,40 @@ tick.
 \textbf{Section 2} - \emph{TOPOLOGY}: In this section, we describe settings for
 all three supported topologies - Stratified, Cascade and Free Route. The
 parameter fully\_connected enables us to have a complete or a semi-connected
-Stratified topology. Also, in this section we define the routing strategy by
-choosing between the source - users choose the route - or hop\_by\_hop - random
-selection. Other parameters in this section include E2E, the minimum end-to-end
-transmission delay, and n\_layers, l\_mixes\_per\_layer and n\_cascades, which
-describe the number of layers and their corresponding number of mixes.
+Stratified topology. Also, we define the routing strategy by choosing between
+the \texttt{source} - users choose the route - or \texttt{hop\_by\_hop} - random
+selection. Other parameters include \texttt{E2E}, the minimum end-to-end
+transmission delay, and \texttt{n\_layers}, \texttt{l\_mixes\_per\_layer} and
+\texttt{n\_cascades}, which describe the number of layers and their
+corresponding number of mixes.
 
-\textbf{Section 3} - \emph{MIXING}: This section is related to the
-available mixing techniques. We have the mix\_type, which can be Poisson,
-Time, or Pool and mu, which is the delay on each mix node. For each of the
+\textbf{Section 3} - \emph{MIXING}: This section is related to the available
+mixing techniques. We have the \texttt{mix\_type}, which can be Poisson, Time,
+or Pool and mu, which is the delay on each mix node. For each of the
 aforementioned mixing techniques, the variables timeout, threshold, and
-flush\_percent, match each case accordingly.
+\texttt{flush\_percent}, match each case accordingly.
 
-\textbf{Section 4} - \emph{DUMMIES}: This section regards dummy data
-generation. The user sets the variables client\_dummies to enable or
-disable dummy messages, rate\_client\_dummies to control the dummy data
-generation, link\_based\_dummies to send dummies dropped on the next hop,
-multiple\_hop\_dummies to send dummies that last for many hops, and
-rate\_mix\_dummies to generate dummy messages on the Mix.
+\textbf{Section 4} - \emph{DUMMIES}: This section regards dummy data generation.
+The user sets the variables \texttt{client\_dummies} to enable or disable dummy
+messages, \texttt{rate\_client\_dummies} to control the dummy data generation,
+\texttt{link\_based\_dummies} to send dummies dropped on the next hop,
+\texttt{multiple\_hop\_dummies} to send dummies that last for many hops, and
+\texttt{rate\_mix\_dummies} to generate dummy messages on the Mix.
 
 \textbf{Section 5} - \emph{NODE\_SELECTION}: All attributes in this
 section are not required during the simulation and might be the fragments of
 older software versions. 
 
 \textbf{Section 6} - \emph{THREAT\_MODEL}: In this section we define the number
-of corrupted nodes and if we want them uniformly distributed across the network
-layers.
+of corrupted nodes and we give direction weather we want them to be uniformly
+distributed across the network layers.
 
 
 \subsection{Baseline Simulation and Profiling Measurements}
 
 Section 3.1.3 described our attempt to evaluate the Simulator according to a
 baseline scenario. We make the same assumptions for MiXiM, running the same
-experiments. Unfortunately, our expectations did not match the results since we
+experiments. Unfortunately, our expectations do not match the results since we
 could not reproduce every simulation.
 
 Mainly, we managed to simulate Stratified topologies for 100 and 1000 time
@@ -826,7 +827,7 @@ Indeed, skimming the source code, we managed to spot four bugs we present in the
     has no value.
     \item The initial parsing of boolean parameters from the configuration file
     is incorrect since the code used is a Python2 command which, when using
-    Python3 - which other project libraries require - always returns True.
+    Python3 - other project libraries require it - always returns True.
     Therefore, all boolean parameters in the configuration file are True, no
     matter their actual value.
 \end{enumerate}
@@ -852,7 +853,7 @@ experiments.
 Ultimately, we run the project using a cProfiler to get visual information and
 statistics about the execution tree. We get a detailed representation of the
 execution tree in Appendix \ref{appendix:b2}. We also analyze the project using
-\emph{SonarQube} to get information about the quality of the code. In the first
+\emph{SonarQube} to obtain information about the quality of the code. In the first
 place, cProfiler reveals that 44.18\% of the CPU usage was for randomly
 selecting the next hop of a packet. MiXiM's case is different from Piotrowska's
 Simulator, in which updating entropy was the most resource-hungry task. In fact,
@@ -954,7 +955,7 @@ Simulator. We justify our decision mainly based on the usability aspect. Even
 though MiXiM advertises a large set of features, it fails to deliver a working
 code-base. We are confident that Simulator is a well-designed software and can
 be improved by supporting a complete set of features, in the future. Besides,
-Simulator justified our reasoning for valid and quality entropy and network
+Simulator justifies our reasoning for valid and quality entropy and network
 latency results. 
 
 \chapter{Replication Study}
@@ -970,7 +971,7 @@ considering previous works\cite{piotrowska2021studying,ben2021mixim}. Our goal
 is to realise how existing topologies, mixing techniques, cover/decoy traffic
 and the appearance of corrupter Mixes affect the latency and anonymity of a
 Mixnet. This analysis will help us reason about Mixnets' behaviour, further
-extending recent research in chapter 5.
+extending recent research in Chapter 5.
 
 Replicating previous work was challenging for many reasons. For our part, the
 experimental set-up was not clearly described, and some parameters were missing.
@@ -1032,9 +1033,9 @@ base.
  \end{figure}
 
 
- Indeed, Figure \ref{fig:elixxir} portray the expected results. Assuming
+ Figure \ref{fig:elixxir} portray the expected results. Assuming
  Cascades of length three and by increasing the number of users, we observe an
- increase in entropy as well. Also, we remark that the entropy's increase rate
+ increase in entropy as well. Also, we notice that the entropy's increase rate
  is much more extensive for a Single-Cascade (1x3) than for a Multi-Cascade(2x3)
  topology. Nonetheless, there is evidence of poor latency in Figure
  \ref{fig:elixxir-cascade} when the system facilitates more than 2000 users.
@@ -1081,7 +1082,7 @@ base.
  should have been higher for more extended time frames. According to the
  simulation results, this is not true, as the drawn curves seem primarily
  identical. Nonetheless, we are not confident about the quality of the results
- since, as we have studied in chapter 3, MiXiM has many bugs and unrealised
+ since, as we have studied in Chapter 3, MiXiM has many bugs and unrealised
  features.
 
 \begin{figure}[h!]
@@ -1099,6 +1100,7 @@ base.
         \caption{Impact of different number of layers and average delay on Entropy}
         \label{fig:mixim-different-layers}
     \end{subfigure}
+    \caption{Impact on Ananymity}
  \end{figure}
 
 \section{Studying the Effect of Traffic}
@@ -1145,7 +1147,7 @@ Therefore, more users imply higher anonymity levels. In fact, as noted by
 [simulator] and [mixim], increasing the average delay of Continous mixing offers
 greater anonymity. Nevertheless, what if we want to keep latency down? As we
 notice in Figure \ref{fig:nym-stratified-low-latency-constant-anonymity} this
-can be achieved by keeping the average delay down. As more and more users join a
+can be achieved by keeping the average delay lower. As more and more users join a
 Stratified network, the anonymity increases; thus, we can employ low mixing
 delays. As a result, we have a network with low latency yet constant anonymity.
 
@@ -1158,10 +1160,10 @@ delays. As a result, we have a network with low latency yet constant anonymity.
 
 \section{Studying the Effect of Corrupt Relays}
 
-Another exciting subject investigated by Guirat et al.[] is the appearance of
-corrupted Mixes within a Stratified network. The notion of a corrupt node
-implies that the adversary knows all input and output messages on a Mix with
-complete certainty. 
+Another exciting subject investigated by Guirat et al.\cite{ben2021mixim} is the
+appearance of corrupted Mixes within a Stratified network. The notion of a
+corrupt node implies that the adversary knows all input and output messages on a
+Mix with complete certainty. 
 
 The results illustrated in Figure \ref{fig:corrupted-mixes} refer to a
 Stratified network of three layers comprising ten mixes each. The mixing technique
@@ -1177,7 +1179,7 @@ mixes.
     \label{fig:corrupted-mixes}
  \end{figure}
 
-Indeed, Figure \ref{fig:corrupted-mixes} depicts rigid results. There is a
+Assuredly, Figure \ref{fig:corrupted-mixes} depicts rigid results. There is a
 steady decrease in anonymity each time we increase the fraction of corrupt
 nodes. Moreover, it is interesting to observe that for 0\% and 10\% of
 corruption, the three-layer scheme provides better anonymity, while this is not
@@ -1187,33 +1189,34 @@ four-layer Stratified Mixnet. In contrast, the entropy of a five-layer design
 seems to perform better. Intuitively, this is reasonable because a network with
 more layers provides the possibility of having less interference by an
 adversary. On the other side, a network with fewer layers but more adversarial
-mixes implies a greater possibility of maliciously influencing the communication
+mixes, implies a greater possibility of maliciously influencing the communication
 between mixes.
 
 Ultimately, considering the effect of the number of layers on the network's
-anonymity according to [mixim], and the results of our experiment in Figure
-\ref{fig:corrupted-mixes}, we deduce that it is challenging to design a Mixnet.
-In the first place, we observe that increasing the number of layers does not
-much contribute to the anonymity while introducing corrupt relays appears to
+anonymity according to \cite{ben2021mixim}, and the results of our experiment in
+Figure \ref{fig:corrupted-mixes}, we deduce that it is challenging to design a
+Mixnet. In the first place, we observe that increasing the number of layers does
+not much contribute to the anonymity, while introducing corrupt relays appears to
 make more extensive networks necessary. Nevertheless, augmenting a Mixnet
 implies computational and hardware expenses. It is beyond question that there
 are some apparent tradeoffs between anonymity and scalability when adversaries
 emerge.
 
 \chapter{Exteding Current Research Using Simulator}
-Chapter 5 discusses our main contribution to the Mixnets field, which is the
+Chapter 5 discusses our main contribution to the Mixnets field, towards the
 simulation and evaluation of arbitrarily formed Stratified networks.
 Particularly, we assumed that a Stratified Mix Network might have imbalanced
 layers due to crashing Mixes. Within the context of this chapter, we study two
 different types of imbalanced Mixnets, which are (a) dynamically imbalanced and
 (b) statically imbalanced. Additionally, we examine the impact on anonymity
 caused by increasing the number of Mixes per layer. Lastly, any experiments in
-this chapter operated on our modified version of Piotrowska's Simulator[].
+this chapter operated on our modified version of Piotrowska's
+Simulator\cite{simulator}.
 
 \section{Stratified Networks with Increasing Number of Mixes}
 
-In previous research, Guirat et al.[] investigated the topic of increasing the
-number of layers in a Stratified network. In this section of chapter 5, we
+Guirat et al.\cite{ben2021mixim} in 2021 investigated the topic of increasing the
+number of layers in a Stratified network. In this section of Chapter 5, we
 experiment with the number of Mixes per layer regarding Stratified networks.
 
 Our experimental setup is relatively straightforward. We are using a Stratified
@@ -1224,7 +1227,7 @@ Mixes to yield worse anonymity. We justify our supposition, assuming that each
 Mix will eventually receive less traffic. It is a matter of fact that less
 traffic implies a smaller anonymity set; hence, a global adversary might be able
 to identify message senders and receivers smoothly. Still, assuming that we are
-using the Continous mixing technique, which has a memory-less property[], the
+using the Continous mixing technique, which has a memory-less property, the
 network's entropy should fluctuate in a tight range.
 
 \begin{figure}[h!]
@@ -1234,7 +1237,7 @@ network's entropy should fluctuate in a tight range.
     \label{fig:stratified-incresing-number-of-mixes}
 \end{figure}    
 
-Indeed, observing Figure \ref{fig:stratified-incresing-number-of-mixes} we
+Observing Figure \ref{fig:stratified-incresing-number-of-mixes} we
 deduce that entropy is initially different, but as we increase the network's
 user base, it converges. Potentially, we can declare that the three
 interpolations are logarithmic-like for a low number of users. Nonetheless, we
@@ -1246,7 +1249,7 @@ larger user bases yield better anonymity overall.
 
 
 \section{Dynamically Imbalanced Stratified Network}
-The notion of a dynamically imbalanced Stratified network revolves around the
+The notion of a dynamically imbalanced Stratified network, revolves around the
 idea of having random Mixes crashing arbitrarily through different message
 transmission rounds. Our goal is to make each Mix crash according to a given
 probability. Mainly, we extended Simulator to handle this feature by tossing a
@@ -1261,7 +1264,7 @@ there is wasted time when a Mix tries to find the next live destination.
 In our experimental setup, we assumed a Stratified network with three layers
 comprising ten Mixes. Also, we set the mixing techniques to Continous, with an
 average delay of 0.1 seconds. Then, we ran our simulation for 20\%, 40\% and 60\%
-probability of failure for each Mix individually. 
+probability of failure for each Mix, individually. 
 
 Our initial hypotheses considered that increasing the failure probability would
 decrease anonymity because a considerable amount of Mixes receive less traffic.
@@ -1284,7 +1287,7 @@ remains constant.
 
 The results illustrated in the above Figure \ref{fig:dynamic-crash-probability}
 are reasonable and justified through the simulation logs. In more detail,
-skimming the log files, we revealed that invalid paths occur sporadically; hence
+skimming the log files, we revealed that invalid paths occur sporadically; hence,
 the increased latency of a few messages does not affect the average network
 latency. Moreover, anonymity is not affected because entropy fluctuations seem
 to cancel out each other after simulating many messages for many users. In other
@@ -1336,7 +1339,7 @@ respectively.
 
 According to our analysis in Figures \ref{fig:first-layer-variable},
 \ref{fig:last-layer-variable}, and \ref{fig:middle-layer-variable},  increasing
-the number of layers regardless of the layer position impacts anonymity
+the number of Mixes per layer, regardless of the layer position, impacts anonymity
 likewise. This is caused because all mixes repeat the same process in all layers
 and traffic flows continuously from senders to Mixes and from Mixes to
 recipients. Nonetheless, something different occurs assuming a smaller user
@@ -1347,7 +1350,7 @@ credible since, by definition, routing more traffic into a Mix results in better
 anonymity.
 
 Finally, we observe latency at a constant level of 0.3. The exact value was
-reported in the previous section of chapter 5, where we simulated a dynamically
+reported in the previous section of Chapter 5, where we simulated a dynamically
 imbalanced network. This was expected since latency, as realised earlier, is not
 mainly affected in network designs utilising the Continous mixing technique. 
 
@@ -1377,9 +1380,9 @@ mandate roughly 16GB of RAM).
 
 Further, we conducted a short replication study attempting to validate previous
 research\cite{piotrowska2021studying,ben2021mixim} and reason about their
-results. We manage to partially replicate experiments because of hardware
-limitations. As mentioned in chapter 4, our environment's RAM was caped to 16GB.
-Nonetheless, our analysis revealed that, indeed anonymity of a Mixnet can be
+results. We managed to partially replicate experiments because of hardware
+limitations. As mentioned in Chapter 4, our environment's RAM was caped to 16GB.
+However, our analysis revealed that, indeed anonymity of a Mixnet can be
 affected by the network's topology, mixing technique and the generation of
 cover/decoy traffic. Notably, a Cascade network might achieve greater anonymity
 than a Multi-Cascade and a Stratified network. Also, Continous mixing yields low
@@ -1409,7 +1412,7 @@ tested Stratifed topology and Continous mixing.
 In the future, we suggest exploring imbalanced Stratified Mix Networks further.
 Particularly, it is worth experimenting with all mixing techniques since
 threshold and timed Mixes might behave differently in an imbalanced network.
-Besides that, we can adapt the dynamically imbalanced concept for Cascade and
+Besides that, we can adopt the dynamically imbalanced concept for Cascade and
 Multi-Cascade topologies. Essentially, in Cascade networks, each Mix is a
 potential point of failure. Therefore,  simulating imbalanced Cascades will
 allow us to evaluate the actual overhead in latency and anonymity when a Mix
