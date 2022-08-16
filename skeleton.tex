@@ -85,34 +85,33 @@
 \date{\today}
 
 \abstract{ Mix Networks is a means of anonymous communication that obliterates
-    any link between senders and receivers by routing messages through a chain
-    of nodes, also known as Mixes. The literature describes several topological
-    structures - Cascade, Multi-Cascade, Stratified and Mesh - and mixing
-    techniques - Time-based, Threshold Based, Pool and Continous - we can employ
-    to form a Mix Network. Each configuration can independently affect the
-    anonymity - measured in Entropy - and latency of a network. Recently,
-    researchers developed two simulators (MiXiM and Simulator) to evaluate the
-    performance and anonymity of various Mix Network arrangements. In this work,
-    we compare both simulators to find out which has the potential to support
-    future research. Results suggest that Piotrowska's Simulator provides
-    trusted quality results. Further, we conduct a short replication study to
-    reason about recent developments regarding Mix Network designs. We manage to
-    partially yet accurately replicate previous research. The results are sound
-    for Simulator, but this is not the case for MiXiM. Ultimately, we modify one
-    of the simulators to support dynamically and statically imbalanced
-    Stratified networks, reporting the impact on anonymity and latency. A
-    dynamically imbalanced network assumes that Mixes might fail on each
-    transmission round with a certain probability. In contrast, a statically
-    imbalanced Stratified network assumes a different fixed number of Mixes per
-    layer. It is essential to mention that in this work, we exclusively use
-    Continuous mixing. The trials' outcome suggests that anonymity and latency
-    are not affected for statically and dynamically imbalanced networks,
-    especially when many users participate. Despite that, for small user bases,
-    we notice a slight anonymity deviation. Configurations with fewer Mixes have
-    a thin advantage in terms of Entropy. Finally, our work has introduced the
-    notion of Stratified imbalanced networks. Yet we are confident that future
-    developments will further extend and research imbalanced topologies assuming
-    various mixing techniques. }
+any link between senders and receivers by routing messages through a chain of
+nodes, also known as Mixes. The literature describes several topological
+structures and mixing techniques we can employ to form a Mix Network. Well-known
+topologies include Cascade, Multi-Cascade, Stratified and Mesh, while mixing
+techniques are Timed, Threshold, Pool and Continous. Each configuration can
+independently affect the anonymity - measured in Entropy - and latency of a
+network. Recently, researchers developed two simulators - MiXiM and Simulator -
+to evaluate the performance and anonymity of various Mix Network arrangements.
+In this work, we compare both simulators to find out which has the potential to
+support future research. Results suggest that Patriwska's Simulator provides
+trusted quality results. Further, we conduct a short replication study to reason
+about recent developments regarding Mix Network designs. We manage to partially
+yet accurately replicate previous research. The results are sound for Simulator,
+but this is not the case for MiXiM. In addition, we modify one of the simulators
+to support dynamically and statically imbalanced Stratified networks, reporting
+the impact on anonymity and latency. A dynamically imbalanced network assumes
+that Mixes might fail on each transmission round with a certain probability. In
+contrast, a statically imbalanced Stratified network assumes a different fixed
+number of Mixes per layer. It is essential to mention that we exclusively use
+Continuous mixing. The trials' outcomes suggest that anonymity and latency are
+not affected for statically and dynamically imbalanced networks, especially when
+many users participate. Despite that, for small user bases, we notice a slight
+anonymity deviation. Configurations with fewer Mixes have a thin advantage in
+terms of Entropy. Finally, our work has introduced the notion of Stratified
+imbalanced networks. Yet, we are confident that future developments will further
+extend and research imbalanced topologies, applying various mixing
+techniques. }
 
 \maketitle
 
