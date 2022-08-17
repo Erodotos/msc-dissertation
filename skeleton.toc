@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Time-Based}{7}%
 \contentsline {subsection}{\numberline {2.3.2}Threshold-Based}{8}%
 \contentsline {subsection}{\numberline {2.3.3}Pool-Mix}{8}%
-\contentsline {subsection}{\numberline {2.3.4}Continous}{8}%
+\contentsline {subsection}{\numberline {2.3.4}Continuous}{8}%
 \contentsline {section}{\numberline {2.4}Measuring Anonymity}{9}%
 \contentsline {chapter}{\numberline {3}A Deep Dive Into The Simulators}{10}%
 \contentsline {section}{\numberline {3.1}Simulator}{10}%
