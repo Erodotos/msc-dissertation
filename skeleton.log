@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  17 AUG 2022 08:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.24)  17 AUG 2022 10:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -463,61 +463,61 @@ Chapter 1.
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 232.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 233.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 10.79993pt on input line 232.
+(Font)              scaled to size 10.79993pt on input line 233.
  [2] [3] [4]
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 15.55188pt on input line 280.
+(Font)              scaled to size 15.55188pt on input line 281.
 [5
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 305.
+(Font)              scaled to size 12.9599pt on input line 306.
  [6]
 <figures/topologies/cascade.png, id=51, 432.61626pt x 141.52875pt>
 File: figures/topologies/cascade.png Graphic file (type png)
 <use figures/topologies/cascade.png>
-Package pdftex.def Info: figures/topologies/cascade.png  used on input line 354.
+Package pdftex.def Info: figures/topologies/cascade.png  used on input line 355.
 (pdftex.def)             Requested size: 185.65297pt x 60.73523pt.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 355.
+(Font)              scaled to size 9.85492pt on input line 356.
 <figures/topologies/multi-cascade.png, id=53, 432.61626pt x 141.52875pt>
 File: figures/topologies/multi-cascade.png Graphic file (type png)
 <use figures/topologies/multi-cascade.png>
-Package pdftex.def Info: figures/topologies/multi-cascade.png  used on input line 361.
+Package pdftex.def Info: figures/topologies/multi-cascade.png  used on input line 362.
 (pdftex.def)             Requested size: 185.65297pt x 60.73523pt.
 <figures/topologies/stratified.png, id=54, 432.61626pt x 194.7275pt>
 File: figures/topologies/stratified.png Graphic file (type png)
 <use figures/topologies/stratified.png>
-Package pdftex.def Info: figures/topologies/stratified.png  used on input line 368.
+Package pdftex.def Info: figures/topologies/stratified.png  used on input line 369.
 (pdftex.def)             Requested size: 185.65297pt x 83.56479pt.
 <figures/topologies/mesh.png, id=55, 422.57875pt x 151.56625pt>
 File: figures/topologies/mesh.png Graphic file (type png)
 <use figures/topologies/mesh.png>
-Package pdftex.def Info: figures/topologies/mesh.png  used on input line 375.
+Package pdftex.def Info: figures/topologies/mesh.png  used on input line 376.
 (pdftex.def)             Requested size: 185.65297pt x 66.5899pt.
  [7 </Users/erodotos/Desktop/msc-dissertation/figures/topologies/cascade.png> </Users/erodotos/Desktop/msc-dissertation/figures/topologies/multi-cascade.png> </Users/erodotos/Desktop/msc-dissertation/figures/topologies/stratified.png> </Users/erodotos/Desktop/msc-dissertation/figures/topologies/mesh.png>]
 <figures/mixing_techniques/timed.png, id=64, 271.7352pt x 145.9854pt>
 File: figures/mixing_techniques/timed.png Graphic file (type png)
 <use figures/mixing_techniques/timed.png>
-Package pdftex.def Info: figures/mixing_techniques/timed.png  used on input line 439.
+Package pdftex.def Info: figures/mixing_techniques/timed.png  used on input line 440.
 (pdftex.def)             Requested size: 185.65297pt x 99.73875pt.
 <figures/mixing_techniques/threshold.png, id=65, 271.7352pt x 151.767pt>
 File: figures/mixing_techniques/threshold.png Graphic file (type png)
 <use figures/mixing_techniques/threshold.png>
-Package pdftex.def Info: figures/mixing_techniques/threshold.png  used on input line 446.
+Package pdftex.def Info: figures/mixing_techniques/threshold.png  used on input line 447.
 (pdftex.def)             Requested size: 185.65297pt x 103.68881pt.
 <figures/mixing_techniques/pool.png, id=66, 271.7352pt x 151.767pt>
 File: figures/mixing_techniques/pool.png Graphic file (type png)
 <use figures/mixing_techniques/pool.png>
-Package pdftex.def Info: figures/mixing_techniques/pool.png  used on input line 453.
+Package pdftex.def Info: figures/mixing_techniques/pool.png  used on input line 454.
 (pdftex.def)             Requested size: 185.65297pt x 103.68881pt.
 <figures/mixing_techniques/continues.png, id=67, 271.7352pt x 145.9854pt>
 File: figures/mixing_techniques/continues.png Graphic file (type png)
 <use figures/mixing_techniques/continues.png>
-Package pdftex.def Info: figures/mixing_techniques/continues.png  used on input line 460.
+Package pdftex.def Info: figures/mixing_techniques/continues.png  used on input line 461.
 (pdftex.def)             Requested size: 185.65297pt x 99.73875pt.
  [8] [9 </Users/erodotos/Desktop/msc-dissertation/figures/mixing_techniques/timed.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixing_techniques/threshold.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixing_techniques/pool.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixing_techniques/continues.png>]
 Chapter 3.
@@ -532,25 +532,25 @@ Package microtype Info: Loading generic protrusion settings for font family
 <figures/baseline_simulation/simulator/baseline_simulator_entropy.png, id=94, 481.8pt x 361.35pt>
 File: figures/baseline_simulation/simulator/baseline_simulator_entropy.png Graphic file (type png)
 <use figures/baseline_simulation/simulator/baseline_simulator_entropy.png>
-Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_entropy.png  used on input line 677.
+Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_entropy.png  used on input line 678.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/baseline_simulation/simulator/baseline_simulator_space.png, id=95, 481.8pt x 361.35pt>
 File: figures/baseline_simulation/simulator/baseline_simulator_space.png Graphic file (type png)
 <use figures/baseline_simulation/simulator/baseline_simulator_space.png>
-Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_space.png  used on input line 684.
+Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_space.png  used on input line 685.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/baseline_simulation/simulator/baseline_simulator_time.png, id=96, 481.8pt x 361.35pt>
 File: figures/baseline_simulation/simulator/baseline_simulator_time.png Graphic file (type png)
 <use figures/baseline_simulation/simulator/baseline_simulator_time.png>
-Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_time.png  used on input line 691.
+Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_time.png  used on input line 692.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/baseline_simulation/simulator/baseline_simulator_mem.png, id=97, 481.8pt x 361.35pt>
 File: figures/baseline_simulation/simulator/baseline_simulator_mem.png Graphic file (type png)
 <use figures/baseline_simulation/simulator/baseline_simulator_mem.png>
-Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_mem.png  used on input line 698.
+Package pdftex.def Info: figures/baseline_simulation/simulator/baseline_simulator_mem.png  used on input line 699.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
  [14 </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/simulator/baseline_simulator_entropy.png> </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/simulator/baseline_simulator_space.png> </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/simulator/baseline_simulator_time.png> </Users/erodotos/Desktop/msc-dissertation/figures/baseline_simulation/simulator/baseline_simulator_mem.png>] [15]
-Overfull \hbox (27.43156pt too wide) in paragraph at lines 797--803
+Overfull \hbox (27.43156pt too wide) in paragraph at lines 798--804
 \OT1/ptm/m/n/12 (-20) the vari-ables \OT1/pcr/m/n/12 client[]dummies \OT1/ptm/m/n/12 (-20) to en-able or dis-able dummy mes-sages, \OT1/pcr/m/n/12 rate[]client[]dummies
  []
 
@@ -558,22 +558,22 @@ Overfull \hbox (27.43156pt too wide) in paragraph at lines 797--803
 <figures/baseline_simulation/mixim/baseline_mixim_entropy.png, id=114, 481.8pt x 361.35pt>
 File: figures/baseline_simulation/mixim/baseline_mixim_entropy.png Graphic file (type png)
 <use figures/baseline_simulation/mixim/baseline_mixim_entropy.png>
-Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_entropy.png  used on input line 884.
+Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_entropy.png  used on input line 883.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/baseline_simulation/mixim/baseline_mixim_space.png, id=115, 481.8pt x 361.35pt>
 File: figures/baseline_simulation/mixim/baseline_mixim_space.png Graphic file (type png)
 <use figures/baseline_simulation/mixim/baseline_mixim_space.png>
-Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_space.png  used on input line 891.
+Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_space.png  used on input line 890.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/baseline_simulation/mixim/baseline_mixim_time.png, id=116, 481.8pt x 361.35pt>
 File: figures/baseline_simulation/mixim/baseline_mixim_time.png Graphic file (type png)
 <use figures/baseline_simulation/mixim/baseline_mixim_time.png>
-Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_time.png  used on input line 898.
+Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_time.png  used on input line 897.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/baseline_simulation/mixim/baseline_mixim_mem.png, id=117, 481.8pt x 361.35pt>
 File: figures/baseline_simulation/mixim/baseline_mixim_mem.png Graphic file (type png)
 <use figures/baseline_simulation/mixim/baseline_mixim_mem.png>
-Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_mem.png  used on input line 905.
+Package pdftex.def Info: figures/baseline_simulation/mixim/baseline_mixim_mem.png  used on input line 904.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 
 
@@ -587,21 +587,21 @@ Chapter 4.
 <figures/simulator/1_a.png, id=136, 481.8pt x 361.35pt>
 File: figures/simulator/1_a.png Graphic file (type png)
 <use figures/simulator/1_a.png>
-Package pdftex.def Info: figures/simulator/1_a.png  used on input line 1034.
+Package pdftex.def Info: figures/simulator/1_a.png  used on input line 1033.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/simulator/1_b.png, id=137, 481.8pt x 361.35pt>
 File: figures/simulator/1_b.png Graphic file (type png)
 <use figures/simulator/1_b.png>
-Package pdftex.def Info: figures/simulator/1_b.png  used on input line 1041.
+Package pdftex.def Info: figures/simulator/1_b.png  used on input line 1040.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
  [22 </Users/erodotos/Desktop/msc-dissertation/figures/simulator/1_a.png> </Users/erodotos/Desktop/msc-dissertation/figures/simulator/1_b.png>]
 <figures/simulator/2.png, id=143, 481.8pt x 361.35pt>
 File: figures/simulator/2.png Graphic file (type png)
 <use figures/simulator/2.png>
-Package pdftex.def Info: figures/simulator/2.png  used on input line 1078.
+Package pdftex.def Info: figures/simulator/2.png  used on input line 1077.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 
-Overfull \hbox (0.47397pt too wide) in paragraph at lines 1083--1089
+Overfull \hbox (0.47397pt too wide) in paragraph at lines 1082--1088
 []\OT1/ptm/m/n/12 (-20) Using MiXiM, we get sim-i-lar re-sults. In par-tic-u-lar, Fig-ure 4.3a[] de-picts the anonymity
  []
 
@@ -609,28 +609,28 @@ Overfull \hbox (0.47397pt too wide) in paragraph at lines 1083--1089
 <figures/mixim/2.png, id=148, 481.8pt x 361.35pt>
 File: figures/mixim/2.png Graphic file (type png)
 <use figures/mixim/2.png>
-Package pdftex.def Info: figures/mixim/2.png  used on input line 1106.
+Package pdftex.def Info: figures/mixim/2.png  used on input line 1105.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/mixim/3.png, id=149, 481.8pt x 361.35pt>
 File: figures/mixim/3.png Graphic file (type png)
 <use figures/mixim/3.png>
-Package pdftex.def Info: figures/mixim/3.png  used on input line 1113.
+Package pdftex.def Info: figures/mixim/3.png  used on input line 1112.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
  [24 </Users/erodotos/Desktop/msc-dissertation/figures/mixim/2.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixim/3.png>]
 <figures/simulator/3.png, id=155, 481.8pt x 361.35pt>
 File: figures/simulator/3.png Graphic file (type png)
 <use figures/simulator/3.png>
-Package pdftex.def Info: figures/simulator/3.png  used on input line 1144.
+Package pdftex.def Info: figures/simulator/3.png  used on input line 1143.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/simulator/4.png, id=156, 481.8pt x 361.35pt>
 File: figures/simulator/4.png Graphic file (type png)
 <use figures/simulator/4.png>
-Package pdftex.def Info: figures/simulator/4.png  used on input line 1151.
+Package pdftex.def Info: figures/simulator/4.png  used on input line 1150.
 (pdftex.def)             Requested size: 185.65297pt x 139.23872pt.
 <figures/simulator/5.png, id=157, 481.8pt x 361.35pt>
 File: figures/simulator/5.png Graphic file (type png)
 <use figures/simulator/5.png>
-Package pdftex.def Info: figures/simulator/5.png  used on input line 1171.
+Package pdftex.def Info: figures/simulator/5.png  used on input line 1170.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 
 
@@ -640,24 +640,24 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/mixim/4.png, id=164, 481.8pt x 361.35pt>
 File: figures/mixim/4.png Graphic file (type png)
 <use figures/mixim/4.png>
-Package pdftex.def Info: figures/mixim/4.png  used on input line 1192.
+Package pdftex.def Info: figures/mixim/4.png  used on input line 1191.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
  [26 </Users/erodotos/Desktop/msc-dissertation/figures/simulator/5.png> </Users/erodotos/Desktop/msc-dissertation/figures/mixim/4.png>]
-Overfull \hbox (0.8054pt too wide) in paragraph at lines 1210--1219
+Overfull \hbox (0.8054pt too wide) in paragraph at lines 1209--1218
 []\OT1/ptm/m/n/12 (-20) Ultimately, con-sid-er-ing the ef-fect of the num-ber of lay-ers on the net-work's anonymity
  []
 
 [27]
 Chapter 5.
 
-Overfull \hbox (6.86484pt too wide) in paragraph at lines 1231--1231
+Overfull \hbox (6.86484pt too wide) in paragraph at lines 1230--1230
 []\OT1/phv/b/n/17.28 Stratified Net-works with In-creas-ing Num-ber of Mixes 
  []
 
 <figures/simulator_extentions/compare_layer_size.png, id=173, 481.8pt x 361.35pt>
 File: figures/simulator_extentions/compare_layer_size.png Graphic file (type png)
 <use figures/simulator_extentions/compare_layer_size.png>
-Package pdftex.def Info: figures/simulator_extentions/compare_layer_size.png  used on input line 1250.
+Package pdftex.def Info: figures/simulator_extentions/compare_layer_size.png  used on input line 1249.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 [28
 
@@ -665,18 +665,18 @@ Package pdftex.def Info: figures/simulator_extentions/compare_layer_size.png  us
 <figures/simulator_extentions/mix_failure.png, id=181, 481.8pt x 361.35pt>
 File: figures/simulator_extentions/mix_failure.png Graphic file (type png)
 <use figures/simulator_extentions/mix_failure.png>
-Package pdftex.def Info: figures/simulator_extentions/mix_failure.png  used on input line 1297.
+Package pdftex.def Info: figures/simulator_extentions/mix_failure.png  used on input line 1296.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
  [30 </Users/erodotos/Desktop/msc-dissertation/figures/simulator_extentions/mix_failure.png>]
 <figures/simulator_extentions/first_layer_variable.png, id=186, 481.8pt x 361.35pt>
 File: figures/simulator_extentions/first_layer_variable.png Graphic file (type png)
 <use figures/simulator_extentions/first_layer_variable.png>
-Package pdftex.def Info: figures/simulator_extentions/first_layer_variable.png  used on input line 1336.
+Package pdftex.def Info: figures/simulator_extentions/first_layer_variable.png  used on input line 1334.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 <figures/simulator_extentions/last_layer_variable.png, id=187, 481.8pt x 361.35pt>
 File: figures/simulator_extentions/last_layer_variable.png Graphic file (type png)
 <use figures/simulator_extentions/last_layer_variable.png>
-Package pdftex.def Info: figures/simulator_extentions/last_layer_variable.png  used on input line 1343.
+Package pdftex.def Info: figures/simulator_extentions/last_layer_variable.png  used on input line 1341.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 
 
@@ -685,7 +685,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/simulator_extentions/middle_layer_variable.png, id=188, 481.8pt x 361.35pt>
 File: figures/simulator_extentions/middle_layer_variable.png Graphic file (type png)
 <use figures/simulator_extentions/middle_layer_variable.png>
-Package pdftex.def Info: figures/simulator_extentions/middle_layer_variable.png  used on input line 1350.
+Package pdftex.def Info: figures/simulator_extentions/middle_layer_variable.png  used on input line 1348.
 (pdftex.def)             Requested size: 303.49884pt x 227.62204pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -703,12 +703,12 @@ Underfull \hbox (badness 5548) in paragraph at lines 4--7
 
 ] [38]) [39]
 Appendix A.
-LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 1465.
+LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 1463.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1465.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1463.
  [40
 
 ] [41] [42] [43]
@@ -716,7 +716,7 @@ Appendix B.
 <images/cprofile_simulator.png, id=235, 1564.84625pt x 1922.18124pt>
 File: images/cprofile_simulator.png Graphic file (type png)
 <use images/cprofile_simulator.png>
-Package pdftex.def Info: images/cprofile_simulator.png  used on input line 1581.
+Package pdftex.def Info: images/cprofile_simulator.png  used on input line 1579.
 (pdftex.def)             Requested size: 412.56497pt x 506.76523pt.
 [44
 
@@ -727,7 +727,7 @@ Overfull \vbox (77.20265pt too high) has occurred while \output is active []
 <images/cprofile_mixim.png, id=243, 5998.41pt x 4368.32pt>
 File: images/cprofile_mixim.png Graphic file (type png)
 <use images/cprofile_mixim.png>
-Package pdftex.def Info: images/cprofile_mixim.png  used on input line 1585.
+Package pdftex.def Info: images/cprofile_mixim.png  used on input line 1583.
 (pdftex.def)             Requested size: 412.56497pt x 300.41458pt.
  [46 </Users/erodotos/Desktop/msc-dissertation/images/cprofile_mixim.png>] (/Users/erodotos/Desktop/msc-dissertation/skeleton.aux) ) 
 Here is how much of TeX's memory you used:
@@ -739,7 +739,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  49i,10n,77p,1031b,1783s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (52 pages, 1868277 bytes).
+Output written on /Users/erodotos/Desktop/msc-dissertation/skeleton.pdf (52 pages, 1868235 bytes).
 PDF statistics:
  290 PDF objects out of 1000 (max. 8388607)
  157 compressed objects within 2 object streams
